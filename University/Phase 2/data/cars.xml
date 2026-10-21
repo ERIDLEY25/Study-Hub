@@ -1,0 +1,22 @@
+<cars>
+    <car>
+        <make>Aston Martin</make>
+        <model>One-77</model>
+        <year>2009</year>
+    </car>
+    <car>
+        <make>Rover</make>
+        <model>CityRover</model>
+        <year>2005</year>
+    </car>
+    <car>
+        <make>Toyota</make>
+        <model>Corolla</model>
+        <year>2021</year>
+    </car>
+    <car>
+        <make>Toyota</make>
+        <model>Avanza</model>
+        <year>2003</year>
+    </car>
+</cars>
