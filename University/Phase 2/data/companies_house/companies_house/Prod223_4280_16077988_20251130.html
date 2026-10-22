@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:uk-core="http://xbrl.frc.org.uk/fr/2025-01-01/core"
+  xmlns:uk-direp="http://xbrl.frc.org.uk/reports/2025-01-01/direp"
+  xmlns:uk-bus="http://xbrl.frc.org.uk/cd/2025-01-01/business">
+
+<head>
+  <meta name="generator" content="OnlineFilings Ltd" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    .accountsCover {
+      text-align: center;
+      align-items: center;
+      padding: 100px;
+      page-break-after: always;
+    }
+
+    .accountsPage {
+      padding: 15px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .main {
+      font-size: 18px;
+    }
+
+    .right {
+      position: absolute;
+      right: 15px;
+    }
+
+    .balanceSheet {
+      text-align: center;
+    }
+
+    .bsItemsHeader {
+      text-align: left;
+      padding: 5px;
+    }
+
+    .figures {
+      text-align: center;
+    }
+
+    .total {
+      border-top: black solid 1px;
+      border-bottom: black double;
+    }
+
+    .statementItems {
+      font-size: 15px;
+      margin: 8px 0 8px 0;
+      line-height: 20px;
+    }
+
+    * {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 14px;
+    }
+
+    .container,
+    .row,
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 {
+      display: inline-block;
+    }
+
+    .col-sm-1 {
+      width: 8%;
+    }
+
+    .col-sm-2 {
+      width: 16%;
+    }
+
+    .col-sm-3 {
+      width: 25%;
+    }
+
+    .col-sm-4 {
+      width: 33%;
+    }
+
+    .col-sm-5 {
+      width: 41%;
+    }
+
+    .col-sm-6 {
+      width: 50%;
+    }
+
+    .col-sm-7 {
+      width: 58%;
+    }
+
+    .col-sm-8 {
+      width: 66%;
+    }
+
+    .col-sm-9 {
+      width: 75%;
+    }
+
+    .col-sm-10 {
+      width: 83%;
+    }
+
+    .col-sm-11 {
+      width: 91%;
+    }
+
+    .col-sm-12 {
+      width: 100%;
+    }
+
+    #tabletop p {
+
+      margin-top: 0 !important;
+      ;
+      margin-bottom: 5px !important;
+    }
+
+    table {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      box-sizing: border-box;
+      border-spacing: 0;
+      border-collapse: collapse;
+      background-color: transparent;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    thead {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      border-spacing: 0;
+      border-collapse: collapse;
+      box-sizing: border-box;
+    }
+
+    tbody {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      border-spacing: 0;
+      border-collapse: collapse;
+      box-sizing: border-box;
+    }
+
+    tr {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      border-spacing: 0;
+      border-collapse: collapse;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+    }
+
+    td {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+      border-spacing: 0;
+      border-collapse: collapse;
+      box-sizing: border-box;
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+  <title>Dormant Company Accounts - OLIVE PLANT HIRE LTD</title>
+</head>
+
+<body>
+
+  <div style="display: none">
+    <ix:header>
+      <ix:hidden>
+        <ix:nonNumeric name="uk-bus:NameProductionSoftware" contextRef="dcur3">OnlineFilings Ltd</ix:nonNumeric>
+        <ix:nonNumeric name="uk-core:DirectorSigningFinancialStatements" contextRef="dcur0"></ix:nonNumeric>
+        <ix:nonNumeric name="uk-core:DirectorSigningFinancialStatements" contextRef="dcur1"></ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:EntityDormantTruefalse" contextRef="dcur3">true</ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:StartDateForPeriodCoveredByReport" contextRef="icur4">
+          2024-11-13
+        </ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:EndDateForPeriodCoveredByReport" contextRef="icur4">
+          2025-11-30
+        </ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:EntityTradingStatus" contextRef="dcur5"></ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:AccountingStandardsApplied" contextRef="dcur6"></ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:AccountsType" contextRef="dcur7"></ix:nonNumeric>
+        <ix:nonNumeric name="uk-bus:AccountsStatusAuditedOrUnaudited" contextRef="dcur8"></ix:nonNumeric>
+        <ix:nonNumeric name="uk-direp:CompanyHasActedAsAnAgentDuringPeriodTruefalse" contextRef="dcur3">false</ix:nonNumeric>
+      </ix:hidden>
+      <ix:references>
+        <link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd"
+          xlink:type="simple"></link:schemaRef>
+      </ix:references>
+      <ix:resources>
+        <xbrli:context id="dcur0">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1
+              </xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director2
+              </xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="icur4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>
+              2025-11-30
+            </xbrli:instant>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityTradingStatusDimension">
+                uk-bus:EntityHasNeverTraded
+              </xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur6">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:AccountingStandardsDimension">
+                uk-bus:FRS102
+              </xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur7">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:AccountsTypeDimension">
+                uk-bus:FullAccounts</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur8">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:AccountsStatusDimension">
+                uk-bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="iprev9">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>
+              2024-11-30
+            </xbrli:instant>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-ordinary-1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OrdinaryShareClass1</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-ordinary-2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OrdinaryShareClass2</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-ordinary-3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OrdinaryShareClass3</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-ordinary-4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OrdinaryShareClass4</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-ordinary-5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OrdinaryShareClass5</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-preference-1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:PreferenceShareClass1</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-preference-2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:PreferenceShareClass2</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-preference-3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:PreferenceShareClass3</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-preference-4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:PreferenceShareClass4</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-preference-5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:PreferenceShareClass5</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-other-1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OtherShareClass1</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-other-2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OtherShareClass2</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-other-3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OtherShareClass3</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-other-4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OtherShareClass4</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-other-5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:OtherShareClass5</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-deferred-1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:DeferredShareClass1</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-deferred-2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:DeferredShareClass2</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-deferred-3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:DeferredShareClass3</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-deferred-4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:DeferredShareClass4</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="dcur-shareclass-deferred-5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-bus:EntityShareClassesDimension">
+                uk-bus:DeferredShareClass5</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>
+              2024-11-13
+            </xbrli:startDate>
+            <xbrli:endDate>
+              2025-11-30
+            </xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="icur13">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-core:EquityClassesDimension">
+                uk-core:ShareCapitalPreferenceShares</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>
+              2025-11-30
+            </xbrli:instant>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="iprev14">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">
+              16077988
+            </xbrli:identifier>
+            <xbrli:segment>
+              <xbrldi:explicitMember dimension="uk-core:EquityClassesDimension">
+                uk-core:ShareCapitalPreferenceShares</xbrldi:explicitMember>
+            </xbrli:segment>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>
+              2024-11-30
+            </xbrli:instant>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:unit id="GBP">
+          <xbrli:measure>iso4217:GBP</xbrli:measure>
+        </xbrli:unit>
+        <xbrli:unit id="shares">
+          <xbrli:measure>xbrli:shares</xbrli:measure>
+        </xbrli:unit>
+      </ix:resources>
+    </ix:header>
+
+  </div>
+
+
+  <div class="accountsCover bold">
+    <p>Registered Number
+      <ix:nonNumeric name="uk-bus:UKCompaniesHouseRegisteredNumber" contextRef="dcur3">16077988</ix:nonNumeric>
+    </p>
+    <p class="main">
+      <ix:nonNumeric name="uk-bus:EntityCurrentLegalOrRegisteredName" contextRef="dcur3">OLIVE PLANT HIRE LTD</ix:nonNumeric>
+    </p><br />
+    <p>Dormant Accounts</p>
+    <p>
+      November 30, 2025
+    </p>
+  </div>
+
+  <div class="accountsPage">
+    <div class="bold">
+      <span>
+        OLIVE PLANT HIRE LTD
+      </span>
+      <span class="right">Registered Number 16077988</span>
+    </div>
+    <br />
+
+
+    <div class="balanceSheet">
+      <p class="bold main">Balance Sheet as at
+        <ix:nonNumeric name="uk-bus:BalanceSheetDate" contextRef="icur4" format="ixt2:datedaymonthyearen">
+          30 November 2025
+        </ix:nonNumeric>
+      </p>
+
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+          <th id="currentYear">
+            2025
+          </th>
+          
+        </tr>
+
+        <tr>
+          <th></th>
+          <th></th>
+          <th id="currentCurrencySymbol" class="figures">£</th>
+          
+        </tr>
+
+        <tr>
+          <th class="bsItemsHeader">Current assets</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        
+
+            
+              <tr>
+                <td class="row-label">Cash at bank and in hand</td>
+                <td class="row-notes"></td>
+                <td class="figures">
+                  <div>
+                    <ix:nonFraction format="ixt2:numdotdecimal" contextRef="icur4" unitRef="GBP"
+                      name="uk-core:CashBankOnHand" decimals="0">
+                      1
+                    </ix:nonFraction>
+                  </div>
+                </td>
+                
+              </tr>
+              
+
+                <tr class="bold">
+                  <td class="row-label">Net assets</td>
+                  <td class="row-notes"></td>
+                  <td class="total figures">
+                    <div>
+                      <ix:nonFraction format="ixt2:numdotdecimal" contextRef="icur4" unitRef="GBP"
+                        name="uk-core:NetAssetsLiabilities" decimals="0">
+                        1
+                      </ix:nonFraction>
+                    </div>
+                  </td>
+                  
+                </tr>
+
+                <tr class="bsItemsHeader">
+                  <th class="bsItemsHeader">Issued share capital</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+
+                
+                  
+
+                    <tr>
+                      <td class="row-label">
+                        <ix:nonFraction format="ixt2:numdotdecimal" contextRef="dcur-shareclass-ordinary-1" unitRef="shares"
+                          name="uk-core:NumberSharesAllotted" decimals="2">
+                          1
+                        </ix:nonFraction>
+                        <ix:nonNumeric name="uk-bus:DescriptionShareType" contextRef="dcur-shareclass-ordinary-1">
+                          Ordinary
+                        </ix:nonNumeric>
+                        Shares of £
+                        <ix:nonFraction format="ixt2:numdotdecimal" contextRef="dcur-shareclass-ordinary-1" unitRef="GBP"
+                          name="uk-core:ParValueShare" decimals="0">
+                          1
+                        </ix:nonFraction>
+                        each
+                      </td>
+                      <td></td>
+                      <td class="number figures">
+                        1
+                      </td>
+                      
+                    </tr>
+                    
+
+
+                      <tr class="bold">
+                        <td class="row-label">Total Shareholder funds</td>
+                        <td class="row-notes"></td>
+                        <td class="number total figures">
+                          <div>
+                            <ix:nonFraction format="ixt2:numdotdecimal" contextRef="icur4" unitRef="GBP"
+                              name="uk-core:Equity" decimals="0">
+                              1
+                            </ix:nonFraction>
+                          </div>
+                        </td>
+                        
+                      </tr>
+
+
+
+      </table>
+    </div>
+
+
+
+
+
+    <br />
+
+    <div id="statements">
+      <p class="bold">STATEMENTS</p>
+      <ol>
+        <li id="dormantCompany-statement" class="statementItems">
+          <ix:nonNumeric
+            name="uk-direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection480CompaniesAct2006RelatingToDormantCompanies"
+            contextRef="dcur3">
+            For the year ending 30 November 2025 the company was
+              entitled to exemption under section 480 of the Companies Act 2006 relating to dormant companies.
+          </ix:nonNumeric>
+        </li>
+
+        <li id="auditExempt-statement" class="statementItems">
+          <ix:nonNumeric name="uk-direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit" contextRef="dcur3">
+            The members have not required the company to obtain an audit in accordance with section 476 of the
+            Companies Act 2006.
+          </ix:nonNumeric>
+        </li>
+
+        <li id="directorsResponsibilities-statement" class="statementItems">
+          <ix:nonNumeric name="uk-direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct"
+            contextRef="dcur3">
+            The directors acknowledge their responsibilities for complying with the requirements of the Act with
+            respect to accounting records and the preparation of accounts.
+          </ix:nonNumeric>
+        </li>
+
+        <li id="smallCompany-statement" class="statementItems">
+          <ix:nonNumeric
+            name="uk-direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime"
+            contextRef="dcur3">
+            These accounts have been prepared in accordance with the provisions applicable to companies subject
+            to the small companies regime.
+          </ix:nonNumeric>
+        </li>
+      </ol>
+    </div>
+
+    <div id="approval">
+      <p>Approved by the Board on
+        <ix:nonNumeric name="uk-core:DateAuthorisationFinancialStatementsForIssue" contextRef="icur4"
+          format="ixt2:datedaymonthyearen">
+          6 August 2026
+        </ix:nonNumeric>
+      </p>
+      <br />
+      <p><span class="bold">And signed on their behalf by:</span><br />
+        <span class="officername" id="officername_0">
+          <ix:nonNumeric name="uk-bus:NameEntityOfficer" contextRef="dcur0">
+            <span class="statementItems">
+              Olivia DONNELLY, Director
+            </span>
+          </ix:nonNumeric>
+        </span><br />
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

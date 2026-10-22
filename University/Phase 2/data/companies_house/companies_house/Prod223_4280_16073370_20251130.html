@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:aurep="http://xbrl.frc.org.uk/reports/2025-01-01/aurep" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:direp="http://xbrl.frc.org.uk/reports/2025-01-01/direp" xmlns:accrep="http://xbrl.frc.org.uk/reports/2025-01-01/accrep" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://xbrl.frc.org.uk/general/2025-01-01/common" xmlns:core="http://xbrl.frc.org.uk/fr/2025-01-01/core" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:curr="http://xbrl.frc.org.uk/cd/2025-01-01/currencies" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:lang="http://xbrl.frc.org.uk/cd/2025-01-01/languages" xmlns:bus="http://xbrl.frc.org.uk/cd/2025-01-01/business" xmlns:types="http://xbrl.frc.org.uk/general/2025-01-01/types" xmlns:countries="http://xbrl.frc.org.uk/cd/2025-01-01/countries" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:uk-ref="http://xbrl.frc.org.uk/general/2025-01-01/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldte="http://xbrl.org/2005/xbrldt/errors" xmlns:xbrldie="http://xbrl.org/2006/xbrldi/errors" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:frs-102="http://xbrl.frc.org.uk/FRS-102/2025-01-01" xmlns:dpl="http://xbrl.frc.org.uk/dpl/2025-01-01" xmlns:dpl-frc="http://xbrl.frc.org.uk/dpl/2025-01-01" xmlns:uk-countries="http://xbrl.frc.org.uk/cd/2025-01-01/countries">
+  <head>
+    <title>WATCHTOWER ANALYTICS LTD - Accounts</title>
+    <meta content="application/xhtml+xml; charset=UTF-8" http-equiv="Content-Type" />
+    <style type="text/css">
+		body.report-body { margin: 0 8px; }
+		.page700 { min-height: 750px; background-color:transparent; }
+		.pagebreak { page-break-before:always }
+		.pageno { display: none!important }
+		.page-body { padding: 0; vertical-align: top }
+
+		.page700 a { color:#000000; text-decoration:none; font-size: 16px; }
+		.page700 a img { border-style: none; border-width: 0 }
+		.page700 hr { margin: 0; border: none; border-bottom:1px solid #202020 }
+		.page700 p { text-align:justify; margin-top:15px; margin-bottom:15px }
+		.page700 p strong { text-align:left }
+		.page700 p.subhead { font-weight:bold; margin-top:5px; margin-bottom:5px; text-align:left }
+		.page700 table.page { width: 100%; border-spacing: 0; font-family:Arial !important; font-size:16px }
+		.page700 table.tfont { font-size:16px }
+		.page700 table.page thead { display: table-header-group }
+		.page700 table tbody { vertical-align: top }
+		.page700 table.page700 thead th { height: 90px }
+		.page700 thead th { font-weight:normal; font-size:20px }
+		.page700 table.w100p, .page700 table.w550px { font-size:16px;margin-bottom:10px;  }
+		.page700 tr.spacer { height:10px }
+
+		.page700 .w95px { width: 85px; vertical-align:middle }        
+		.page700 .w25px { width: 10px }
+		.page700 .w10px { width: 5px }
+		.page700 .w100p { width: 100% }
+		.page700 .w550px { width: 550px; }
+		.page700 .w200px { width: 200px }
+		.page700 .w98p{ width: 94%; }
+
+		.page700 .cover-company { text-align: center; font-size:20px; text-transform:uppercase;  }
+		.page700 .center { margin: auto }
+		.page700 .tcenter { text-align:center }
+		.page700 .left, .cmp-val { text-align: left }
+		.page700 .page-body .right { text-align: right; vertical-align:middle; float:none;}
+		.page700 .report .right{ float:none; }
+		.page700 .report .left{ float:none; }
+		.page700 .bold { font-weight: bold }
+		.page700 .mb0 { margin-bottom:0 }
+		.page700 .mt0 { margin-top:0 }
+		.page700 .bbottom { border-bottom:1px solid #202020 }
+        .borderbottom { border-bottom:1px solid #202020 }
+		.page700 .pageheader { font-size:19px; text-align:center; margin-top:5px; margin-bottom:20px }
+		.page700 .pageheader a { font-size:19px; }
+		.page700 .avoid_pagebreak { page-break-inside : avoid }
+		.page700 .cmp-val{ padding-bottom: 20px }
+		.page700 .leftHead { width: 230px; display: inline-block; font-weight:bold; vertical-align:top }
+		.page700 .contentHead { width: 270px; display: inline-block; vertical-align:top }
+		.page700 .page-number { width: 100px; display: inline-block; vertical-align:top; text-align:center;font-family:Arial !important }
+		.page700 .totalRow td { border-top:1px solid #202020; font-weight:bold; padding-top:3px; padding-bottom:3px; text-align:right; vertical-align:middle }
+		.page700 .totalCol { border-top:1px solid #202020; font-weight:bold; padding-bottom:5px; text-align:right; vertical-align:middle }
+		.page700 .gTotalCol { border-top:1px solid #202020; border-bottom:1px solid #202020; font-weight:bold; padding-bottom:1px; padding-top: 2px; text-align:right; vertical-align:middle }
+        .page700 .gdoubleTotalCol { border-top:1px solid #202020; border-bottom: 3px double #202020; font-weight:bold; padding-bottom:1px; padding-top: 2px; text-align:right; vertical-align:middle }
+		.page700 .note-no { padding-top:16px; width: 20px; font-weight:bold; vertical-align:top }
+		.page700 .note-body { padding-top: 10px; }
+		.page700 .note-body-bottom { padding-bottom: 10px; }
+         .page700 .note-body .tag { padding-top: 10px;}
+        .page700 .note-body .tagged { margin-top: 10px !important;display:inline-block;}
+        .page700 .note-body .tag .tagged { margin-top:0px !important;display:inline-block;}
+         #note-Goodwill strong { margin-bottom: 10px !important;display:inline-block;position:relative;}
+         #note-LicencesAndPatents strong { margin-bottom: 10px !important;display:inline-block;position:relative;}
+         #note-DevelopmentExpenditures strong { margin-bottom: 10px !important;display:inline-block;position:relative;}
+         #note-ComputerSoftwareDevelopmentCosts strong { margin-bottom: 10px !important;display:inline-block;position:relative;}
+	</style>
+    <style media="print" type="text/css">
+		.page700 table.page, .page700 table.w100p, .page700 table.tfont, .page700 table.w550px { font-size:18px; }
+		.page700 a { font-size:18px; }
+		.page700 .cover-company { font-size: 24px; }
+		.page700 table th.w95px { font-size:20px; }
+		.page700 thead th { font-weight:normal; font-size: 20px; }
+		.page700 .pageheader { font-size:23px; text-align:center; margin-top:5px; margin-bottom:25px; }
+		.page700 .pageheader a { font-size:23px; }
+	</style>
+  </head>
+  <body class="report-body">
+    <div style="display:none">
+      <ix:header>
+        <ix:hidden>
+          <ix:nonNumeric name="bus:StartDateForPeriodCoveredByReport" contextRef="companyA">2024-11-11</ix:nonNumeric>
+          <ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="companyA">2025-11-30</ix:nonNumeric>
+          <ix:nonNumeric name="bus:EntityTradingStatus" contextRef="company" />
+          <ix:nonNumeric name="bus:EntityDormantTruefalse" contextRef="company">false</ix:nonNumeric>
+          <ix:nonNumeric name="bus:LegalFormEntity" contextRef="business_type" />
+          <ix:nonNumeric name="bus:ApplicableLegislation" contextRef="acc_legislation" />
+          <ix:nonNumeric name="bus:AccountsType" contextRef="acc_type" />
+          <ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="acc_audit_status" />
+          <ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="acc_standard" />
+          <ix:nonNumeric contextRef="director1" name="core:DirectorSigningFinancialStatements"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="director1" name="direp:DirectorSigningDirectorsReport"></ix:nonNumeric>
+          <ix:nonNumeric name="bus:NameProductionSoftware" contextRef="company">Capium Accounts Production</ix:nonNumeric>
+          <ix:nonNumeric name="bus:VersionProductionSoftware" contextRef="company">1.1</ix:nonNumeric>
+        </ix:hidden>
+        <ix:references>
+          <link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd" xlink:type="simple" />
+        </ix:references>
+        <ix:resources>
+          <xbrli:context id="current_Period">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_type">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:FullAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_standard">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:Micro-entities</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_audit_status">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_legislation">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:ApplicableLegislationDimension">bus:SmallCompaniesRegimeForAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="business_type">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="company">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="companyA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="office">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityContactTypeDimension">bus:RegisteredOffice</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="withinoneyear">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="afteroneyear">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="company_ControllingPartyUltimateControllingPartyTruefalse">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:typedMember dimension="core:X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension">
+                  <core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>1</core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>
+                </xbrldi:typedMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director1B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="StartPrevious">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-11-11</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="solicitor">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:ThirdPartyAgentStatusDimension">bus:LeadAgentIfApplicable</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-11</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="companyA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-10</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="cost_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="cost_investmentA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-10</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="addition_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:AdditionsToInvestments</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="disposal_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:DisposalsDecreaseInInvestments</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="reval_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:RevaluationsIncreaseDecreaseInInvestments</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="investmentA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16073370</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-10</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:unit id="GBP">
+            <xbrli:measure>iso4217:GBP</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Shares">
+            <xbrli:measure>xbrli:shares</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Pure">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+        </ix:resources>
+      </ix:header>
+    </div>
+    <div class="page700">
+      <table class="page">
+        <tbody>
+          <tr>
+            <td style="text-align: center">
+              <img src="data:image/png;base64,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" alt="Logo On Report" style="width: 200px; height: auto;" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right">Registered Number: <ix:nonNumeric contextRef="company" name="bus:UKCompaniesHouseRegisteredNumber">16073370</ix:nonNumeric></td>
+          </tr>
+          <tr>
+            <td style="text-align: right">England and Wales</td>
+          </tr>
+          <tr>
+            <td>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p class="cover-company">
+                <ix:nonNumeric contextRef="company" name="bus:EntityCurrentLegalOrRegisteredName">WATCHTOWER ANALYTICS LTD</ix:nonNumeric>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <br />
+              <ix:nonNumeric contextRef="company" name="bus:ReportTitle">Unaudited Financial Statements</ix:nonNumeric>
+            </td>
+          </tr>
+          <tr>
+            <td> </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <br />
+              <br />
+              <strong>Period of accounts</strong>
+              <br />
+              <br />
+              <strong>Start date:</strong>
+              <ix:nonNumeric contextRef="companyA" name="bus:StartDateForPeriodCoveredByReport" format="ixt:datedaymonthyearen">11 November 2024</ix:nonNumeric>
+              <br />
+              <br />
+              <strong>End date:</strong>
+              <ix:nonNumeric contextRef="companyA" name="bus:EndDateForPeriodCoveredByReport" format="ixt:datedaymonthyearen">30 November 2025</ix:nonNumeric>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagebreak page700">
+      <table class="page">
+        <thead>
+          <tr>
+            <th>
+              <p class="pageheader" id="p_1">
+                <strong style="text-transform:uppercase;font-weight:100">WATCHTOWER ANALYTICS LTD</strong>
+                <br />
+                <a id="business_information" class="bookmark">Company Information</a>
+                <br />For the Period 11 November 2024 to 30 November 2025</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="page-body">
+              <div id="div_1">
+                <table class="center tfont" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td class="leftHead">Director</td>
+                    <td class="cmp-val">
+                      <ix:nonNumeric contextRef="director1" name="bus:NameEntityOfficer">Rajpal Singh Randhawa</ix:nonNumeric>
+                      <br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="leftHead">Registered Number</td>
+                    <td class="cmp-val">
+                      <ix:nonNumeric contextRef="company" name="bus:UKCompaniesHouseRegisteredNumber">16073370</ix:nonNumeric>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="leftHead">Registered Office</td>
+                    <td class="cmp-val">
+                      <ix:nonNumeric contextRef="office" name="bus:AddressLine1">236</ix:nonNumeric>
+                      <br />
+                      <ix:nonNumeric contextRef="office" name="bus:AddressLine2">Kingsley Road</ix:nonNumeric>
+                      <br />
+                      <ix:nonNumeric contextRef="office" name="bus:PrincipalLocation-CityOrTown">Hounslow</ix:nonNumeric>
+                      <br />
+                      <ix:nonNumeric contextRef="office" name="bus:PostalCodeZip">TW3 4AR</ix:nonNumeric>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="leftHead">Accountants</td>
+                    <td class="cmp-val">ASK ACCOUNTANTS UK LIMITED<br />178
+<br />Merton High Street
+<br />London<br />SW19 1AY</td>
+                  </tr>
+                </table>
+                <div class="pageno">1</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagebreak page700">
+      <table class="page">
+        <thead>
+          <tr>
+            <th>
+              <p class="pageheader" id="p_2">
+                <strong style="text-transform:uppercase;font-weight:100">WATCHTOWER ANALYTICS LTD</strong>
+                <br />
+                <a id="balance_sheet" class="bookmark">Statement of Financial Position</a>
+                <br />As at <ix:nonNumeric contextRef="companyA" name="bus:BalanceSheetDate" format="ixt:datedaymonthyearen">30 November 2025</ix:nonNumeric></p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="page-body">
+              <div id="div_2">
+                <table class="w100p center" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <th> </th>
+                    <th class="tcenter w95px"></th>
+                    <th class="right" colspan="2">2025</th>
+                  </tr>
+                  <tr>
+                    <th> </th>
+                    <th class="tcenter w95px"> </th>
+                    <th class="right w95px">£</th>
+                    <th class="right w95px">£</th>
+                  </tr>
+                  <tr>
+                    <td>Current assets</td>
+                    <td class="tcenter"></td>
+                    <td class="right">
+                      <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:CurrentAssets" unitRef="GBP" format="ixt:numdotdecimal">485</ix:nonFraction> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Creditors: amount falling due within one year</td>
+                    <td class="tcenter"></td>
+                    <td class="borderbottom right">(<ix:nonFraction contextRef="withinoneyear" decimals="0" scale="0" name="core:Creditors" unitRef="GBP" format="ixt:numdotdecimal">675</ix:nonFraction>)</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Net current assets</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="right">
+                      <strong>(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:NetCurrentAssetsLiabilities" unitRef="GBP" format="ixt:numdotdecimal">190</ix:nonFraction>)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Total assets less current liabilities</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="totalCol">(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" format="ixt:numdotdecimal">190</ix:nonFraction>)</td>
+                  </tr>
+                  <tr>
+                    <td>Creditors: amount falling due after more than one year</td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="right">(<ix:nonFraction contextRef="afteroneyear" decimals="0" scale="0" name="core:Creditors" unitRef="GBP" format="ixt:numdotdecimal">8,109</ix:nonFraction>)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Net assets</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="gdoubleTotalCol">(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:NetAssetsLiabilities" unitRef="GBP" format="ixt:numdotdecimal">8,299</ix:nonFraction>)</td>
+                  </tr>
+                  <tr class="spacer">
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <br />
+                    </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Capital and reserves</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="gdoubleTotalCol">(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:Equity" unitRef="GBP" format="ixt:numdotdecimal">8,299</ix:nonFraction>)</td>
+                  </tr>
+                  <tr class="spacer">
+                    <td> </td>
+                  </tr>
+                </table>
+                <div>
+                  <strong>NOTES TO THE ACCOUNTS</strong>
+                </div>
+                <br />
+                <div class="note-body-bottom avoid_pagebreak" id="note-StatutoryInformation">
+                  <strong>General Information</strong>
+                  <br />
+                  <div class="tag tag-152">WATCHTOWER ANALYTICS LTD is a private company, limited by shares, registered in England and Wales, registration number 16073370, registration address 236, Kingsley Road, Hounslow, TW3 4AR.  <br /></div>
+                </div>
+                <table class="w100p">
+                  <tr>
+                    <td class="note-no" style="padding-top:6px">1.</td>
+                    <td>
+                      <p class="subhead">
+                        <strong>Accounting policies</strong>
+                      </p>
+                      <div class="note-body avoid_pagebreak" id="note-BasisOfAccounting">
+                        <strong>Significant accounting policies</strong>
+                        <br />
+                        <div class="tag tag-1">
+                          <ix:nonNumeric contextRef="company" name="core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements">
+                            <b>Statement of compliance</b>
+                            <div class="tag">These financial statements have been prepared in compliance with FRS 105 – The Financial Reporting Standard applicable in the UK and Republic of Ireland and the Companies Act 2006.</div>
+                            <div class="tag">
+                              <b>Basis of preparation</b>
+                            </div>
+                            <div class="tag">The financial statements have been prepared  under the historical cost convention.</div>
+                            <div class="tag">The financial statements are prepared in sterling which is the functional currency of the company.</div>
+                          </ix:nonNumeric>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="avoid_pagebreak">
+                  <table class="w100p">
+                    <tr>
+                      <td class="note-no" style="padding-top:6px;">2.</td>
+                      <td>
+                        <p class="subhead">Average number of employees</p>
+                        <div class="note-body"></div>
+                        <div>Average number of employees during the period was <ix:nonFraction contextRef="company" decimals="0" scale="0" name="core:AverageNumberEmployeesDuringPeriod" unitRef="Pure" format="ixt:numdotdecimal">0</ix:nonFraction>.</div>
+                      </td>
+                    </tr>
+                  </table>
+                  <br />
+                </div>
+                <div class="avoid_pagebreak">
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">For the period ended 30 November 2025 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <b>Director's responsibilities:</b>
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">The members have not required the company to obtain an audit of its accounts for the period in question in accordance with section 476.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">The director acknowledges their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">These accounts have been prepared in accordance with the micro-entity provisions and FRS 105, the Financial Reporting Standard applicable to the micro-entities regime. The accounts have been delivered in accordance with the provisions applicable to companies subject to the small companies regime. The income statement has not been delivered to the Registrar of Companies.</ix:nonNumeric>
+                </div>
+                <div class="avoid_pagebreak" style="margin-bottom:0px; margin-top:15px;text-align:left;">The financial statements were approved by the director on <ix:nonNumeric contextRef="companyA" name="core:DateAuthorisationFinancialStatementsForIssue" format="ixt:datedaymonthyearen">06 August 2026</ix:nonNumeric> and were signed by: <br /><br /><br /><table class="w100p"><tr><td style="width:100%">--------------------------------<br />Rajpal Singh Randhawa<br />Director</td></tr></table></div>
+                <div class="pageno">2</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

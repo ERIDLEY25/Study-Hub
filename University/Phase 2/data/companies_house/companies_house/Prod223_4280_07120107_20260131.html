@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ix="http://www.xbrl.org/2013/inlineXBRL"
+      xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31"
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+      xmlns:link="http://www.xbrl.org/2003/linkbase"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+      xmlns:bus="http://xbrl.frc.org.uk/cd/2026-01-01/business"
+      xmlns:core="http://xbrl.frc.org.uk/fr/2026-01-01/core"
+      xmlns:direp="http://xbrl.frc.org.uk/reports/2026-01-01/direp"
+      xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="generator" content="SimpleCompanyTax Generator 1.0"/>
+  <title>DREWITT ENGINEERING LTD - Micro-Entity Accounts</title>
+  <style type="text/css">
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+    h1 { font-size: 18pt; text-align: center; color: #000; }
+    h2 { font-size: 14pt; border-bottom: 2px solid #333; margin-top: 30px; padding-bottom: 5px; }
+    h3 { font-size: 12pt; margin-top: 20px; color: #555; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    th, td { padding: 8px; text-align: left; border-bottom: 1px solid #eee; }
+    th { background-color: #f9f9f9; font-weight: bold; }
+    td.amount { text-align: right; width: 120px; font-family: "Courier New", Courier, monospace; }
+    td.prior, th.prior { color: #666; }
+    .period-header td { font-size: 9pt; color: #888; border-bottom: 2px solid #ddd; padding-bottom: 4px; }
+    .company-info { text-align: center; margin-bottom: 30px; }
+    .signature { margin-top: 40px; border-top: 1px solid #ccc; padding-top: 20px; }
+    .note { font-size: 10pt; background-color: #fcfcfc; padding: 10px; border: 1px solid #f0f0f0; margin-top: 10px; }
+    .bold { font-weight: bold; }
+    .double-underline { border-bottom: 3px double #000; }
+  </style>
+</head>
+<body>
+
+<!-- Hidden XBRL Header Section -->
+<div style="display:none">
+  <ix:header>
+    <ix:hidden>
+      <!-- Entity identification -->
+      <ix:nonNumeric name="bus:EntityCurrentLegalOrRegisteredName" contextRef="From20250201To20260131">DREWITT ENGINEERING LTD</ix:nonNumeric>
+      <ix:nonNumeric name="bus:UKCompaniesHouseRegisteredNumber" contextRef="From20250201To20260131">07120107</ix:nonNumeric>
+      
+      <!-- Report period dates (instant context) -->
+      <ix:nonNumeric name="bus:StartDateForPeriodCoveredByReport" contextRef="AsOf20260131">2025-02-01</ix:nonNumeric>
+      <ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="AsOf20260131">2026-01-31</ix:nonNumeric>
+      <ix:nonNumeric name="bus:BalanceSheetDate" contextRef="AsOf20260131">2026-01-31</ix:nonNumeric>
+
+      <ix:nonNumeric name="bus:StartDateForPriorPeriod" contextRef="AsOf20260131">2024-02-03</ix:nonNumeric>
+      <ix:nonNumeric name="bus:EndDateForPriorPeriod" contextRef="AsOf20260131">2025-01-31</ix:nonNumeric>
+      
+      <!-- Accounts metadata (dimensional contexts with empty fixedItemType elements) -->
+      <ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="AccountingStandards_From20250201To20260131" format="ixt2:nocontent"/>
+      <ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="AccountsStatus_From20250201To20260131" format="ixt2:nocontent"/>
+      <ix:nonNumeric name="bus:AccountsType" contextRef="AccountsType_From20250201To20260131" format="ixt2:nocontent"/>
+      <ix:nonNumeric name="bus:LegalFormEntity" contextRef="LegalForm_From20250201To20260131" format="ixt2:nocontent"/>
+      <ix:nonNumeric name="bus:DescriptionPrincipalActivities" contextRef="From20250201To20260131">The principal activity of the company during the period was that of a trading entity.</ix:nonNumeric>
+      <ix:nonNumeric name="bus:EntityDormantTruefalse" contextRef="From20250201To20260131">false</ix:nonNumeric>
+      <ix:nonNumeric name="bus:EntityTradingStatus" contextRef="TradingStatus_From20250201To20260131" format="ixt2:nocontent"/>
+      
+      <!-- Director approval (instant context for date, dimensional context for director) -->
+      <ix:nonNumeric name="core:DateAuthorisationFinancialStatementsForIssue" contextRef="AsOf20260131">2026-08-06</ix:nonNumeric>
+      <ix:nonNumeric name="bus:NameEntityOfficer" contextRef="Director_From20250201To20260131">George Francis James Drewitt</ix:nonNumeric>
+      <ix:nonNumeric name="core:DirectorSigningFinancialStatements" contextRef="Director_From20250201To20260131" format="ixt2:nocontent"/>
+      
+      <!-- Directors' report statements (duration context) -->
+      <ix:nonNumeric name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime" contextRef="From20250201To20260131">These accounts have been prepared in accordance with the micro-entity provisions.</ix:nonNumeric>
+      <ix:nonNumeric name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies" contextRef="From20250201To20260131">For the period ending 2026-01-31 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric>
+      <ix:nonNumeric name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct" contextRef="From20250201To20260131">The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.</ix:nonNumeric>
+      <ix:nonNumeric name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit" contextRef="From20250201To20260131">The members have not required the company to obtain an audit of its accounts for the period in question in accordance with section 476.</ix:nonNumeric>
+      <ix:nonNumeric name="direp:StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006" contextRef="From20250201To20260131">The members have elected not to deliver to the Registrar of Companies a copy of the profit and loss account as permitted by section 444(5A) of the Companies Act 2006.</ix:nonNumeric>
+      
+      <!-- Employee count -->
+      <ix:nonFraction name="core:AverageNumberEmployeesDuringPeriod" contextRef="From20250201To20260131" unitRef="u_pure" decimals="0">0</ix:nonFraction>
+    </ix:hidden>
+    <ix:references>
+      <link:schemaRef xlink:type="simple" xlink:href="https://xbrl.frc.org.uk/FRS-102/2026-01-01/FRS-102-2026-01-01.xsd"/>
+    </ix:references>
+    <ix:resources>
+      <!-- Base instant context (balance sheet date) -->
+      <xbrli:context id="AsOf20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:instant>2026-01-31</xbrli:instant>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Base duration context (reporting period) -->
+      <xbrli:context id="From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+
+      <!-- Prior period instant context (previous balance sheet date) -->
+      <xbrli:context id="AsOf20250131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:instant>2025-01-31</xbrli:instant>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Prior period duration context -->
+      <xbrli:context id="From20240203To20250131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2024-02-03</xbrli:startDate>
+          <xbrli:endDate>2025-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Accounting Standards (Micro-entities / FRS 105) -->
+      <xbrli:context id="AccountingStandards_From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:Micro-entities</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Accounts Status (Audit Exempt) -->
+      <xbrli:context id="AccountsStatus_From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Accounts Type (Full Accounts, or Filleted for CH)
+           Intentional pairing with bus:Micro-entities on AccountingStandardsDimension above.
+           The FRC bus: taxonomy has no bus:MicroEntityAccounts member on AccountsTypeDimension —
+           the micro-entity classification lives on AccountingStandardsDimension; this axis
+           describes document completeness (Full vs Filleted vs Abridged).
+           When data.filleted is set (Companies House copy, s444(5A) CA 2006) the member
+           switches from Full to Filleted. See docs/specs/ixbrl-conventions.md section 1. -->
+      <xbrli:context id="AccountsType_From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:FilletedAccounts</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Entity Trading Status -->
+      <xbrli:context id="TradingStatus_From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Legal Form of Entity (Private Limited Company) -->
+      <xbrli:context id="LegalForm_From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Director -->
+      <xbrli:context id="Director_From20250201To20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:startDate>2025-02-01</xbrli:startDate>
+          <xbrli:endDate>2026-01-31</xbrli:endDate>
+        </xbrli:period>
+      </xbrli:context>
+      
+      
+      <!-- Dimensional context: Non-current creditors (after one year) -->
+      <xbrli:context id="NonCurrent_AsOf20260131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:instant>2026-01-31</xbrli:instant>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Dimensional context: Non-current creditors — prior year -->
+      <xbrli:context id="NonCurrent_AsOf20250131">
+        <xbrli:entity>
+          <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">07120107</xbrli:identifier>
+          <xbrli:segment>
+            <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+          </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+          <xbrli:instant>2025-01-31</xbrli:instant>
+        </xbrli:period>
+      </xbrli:context>
+      
+      <!-- Units -->
+      <xbrli:unit id="GBP">
+        <xbrli:measure>iso4217:GBP</xbrli:measure>
+      </xbrli:unit>
+      
+      <xbrli:unit id="u_pure">
+        <xbrli:measure>xbrli:pure</xbrli:measure>
+      </xbrli:unit>
+    </ix:resources>
+  </ix:header>
+</div>
+
+<!-- Visible Content -->
+<div class="company-info">
+  <h1>DREWITT ENGINEERING LTD</h1>
+  <p>Company Registration Number: 07120107</p>
+  <p><strong>Unaudited Micro-Entity Accounts</strong></p>
+  <p>For the period 1 February 2025 to 31 January 2026</p>
+</div>
+
+
+
+
+<h2>Balance Sheet as at 31 January 2026</h2>
+
+<table>
+  <tr>
+    <th>Items</th>
+    <th class="amount">&#163;</th>
+    <th class="amount prior">&#163;</th>
+  </tr>
+  <tr class="period-header">
+    <td></td>
+    <td class="amount">31 January 2026</td>
+    <td class="amount prior">31 January 2025</td>
+  </tr>
+  
+
+  <tr>
+    <td colspan="3"><span class="bold">Fixed Assets</span></td>
+  </tr>
+
+  <tr>
+    <td>Tangible assets</td>
+    <td class="amount"><ix:nonFraction name="core:PropertyPlantEquipment" contextRef="AsOf20260131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:PropertyPlantEquipment" contextRef="AsOf20250131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+  </tr>
+
+  <tr class="bold">
+    <td>Total Fixed Assets</td>
+    <td class="amount"><ix:nonFraction name="core:FixedAssets" contextRef="AsOf20260131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:FixedAssets" contextRef="AsOf20250131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+  </tr>
+  
+  <tr><td colspan="3">&#160;</td></tr>
+  
+  <tr>
+    <td colspan="3"><span class="bold">Current Assets</span></td>
+  </tr>
+  <tr>
+    <td>Debtors</td>
+    <td class="amount"><ix:nonFraction name="core:TradeDebtorsTradeReceivables" contextRef="AsOf20260131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:TradeDebtorsTradeReceivables" contextRef="AsOf20250131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+  </tr>
+
+  <tr>
+    <td>Cash at bank and in hand</td>
+    <td class="amount"><ix:nonFraction name="core:CashBankOnHand" contextRef="AsOf20260131" unitRef="GBP" decimals="0">314</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:CashBankOnHand" contextRef="AsOf20250131" unitRef="GBP" decimals="0">589</ix:nonFraction></td>
+  </tr>
+
+  <tr class="bold">
+    <td>Total Current Assets</td>
+    <td class="amount"><ix:nonFraction name="core:CurrentAssets" contextRef="AsOf20260131" unitRef="GBP" decimals="0">314</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:CurrentAssets" contextRef="AsOf20250131" unitRef="GBP" decimals="0">589</ix:nonFraction></td>
+  </tr>
+  
+  <tr><td colspan="3">&#160;</td></tr>
+  
+  <tr>
+    <td colspan="3"><span class="bold">Liabilities</span></td>
+  </tr>
+  <tr>
+    <td>Creditors: amounts falling due within one year</td>
+    <td class="amount"><ix:nonFraction name="core:TradeCreditorsTradePayables" contextRef="AsOf20260131" unitRef="GBP" decimals="0">0</ix:nonFraction></td>
+    <td class="amount prior">(<ix:nonFraction name="core:TradeCreditorsTradePayables" contextRef="AsOf20250131" unitRef="GBP" decimals="0" sign="-">13</ix:nonFraction>)</td>
+  </tr>
+  
+  <tr class="bold">
+    <td>Net Current Assets</td>
+    <td class="amount"><ix:nonFraction name="core:NetCurrentAssetsLiabilities" contextRef="AsOf20260131" unitRef="GBP" decimals="0">314</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:NetCurrentAssetsLiabilities" contextRef="AsOf20250131" unitRef="GBP" decimals="0">576</ix:nonFraction></td>
+  </tr>
+  
+  <tr class="bold">
+    <td>Total Assets Less Current Liabilities</td>
+    <td class="amount"><ix:nonFraction name="core:TotalAssetsLessCurrentLiabilities" contextRef="AsOf20260131" unitRef="GBP" decimals="0">314</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:TotalAssetsLessCurrentLiabilities" contextRef="AsOf20250131" unitRef="GBP" decimals="0">576</ix:nonFraction></td>
+  </tr>
+  
+  <tr>
+    <td>Creditors: amounts falling due after more than one year</td>
+    <td class="amount">(<ix:nonFraction name="core:Creditors" contextRef="NonCurrent_AsOf20260131" unitRef="GBP" decimals="0" sign="-">47</ix:nonFraction>)</td>
+    <td class="amount prior">(<ix:nonFraction name="core:Creditors" contextRef="NonCurrent_AsOf20250131" unitRef="GBP" decimals="0" sign="-">34</ix:nonFraction>)</td>
+  </tr>
+
+  
+  <tr class="bold">
+    <td>Net Assets</td>
+    <td class="amount"><ix:nonFraction name="core:NetAssetsLiabilities" contextRef="AsOf20260131" unitRef="GBP" decimals="0">267</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:NetAssetsLiabilities" contextRef="AsOf20250131" unitRef="GBP" decimals="0">542</ix:nonFraction></td>
+  </tr>
+  
+  <tr><td colspan="3">&#160;</td></tr>
+  
+  <tr>
+    <td colspan="3"><span class="bold">Capital and Reserves</span></td>
+  </tr>
+  <tr class="bold double-underline">
+    <td>Total Capital and Reserves</td>
+    <td class="amount"><ix:nonFraction name="core:Equity" contextRef="AsOf20260131" unitRef="GBP" decimals="0">267</ix:nonFraction></td>
+    <td class="amount prior"><ix:nonFraction name="core:Equity" contextRef="AsOf20250131" unitRef="GBP" decimals="0">542</ix:nonFraction></td>
+  </tr>
+</table>
+
+<h2>Notes to the Accounts</h2>
+<div class="note">
+  <p><span class="bold">1. Statutory Information</span><br/>
+  DREWITT ENGINEERING LTD is a private company, limited by shares, registered in England and Wales. The company's registered office is 8 Cypress Way, Banstead, Surrey, SM7 1NN, United Kingdom.</p>
+</div>
+
+<div class="note">
+  <p><span class="bold">2. Average Number of Employees</span><br/>
+  The average number of employees during the period was 0.</p>
+</div>
+
+<div class="signature">
+  <p>For the period ending 31 January 2026 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</p>
+  <p>Directors' responsibilities:</p>
+  <ul>
+    <li>The members have not required the company to obtain an audit of its accounts for the period in question in accordance with section 476;</li>
+    <li>The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.</li>
+  </ul>
+  <p>These accounts have been prepared in accordance with the micro-entity provisions of the Companies Act 2006.</p>
+  <p>The members have elected not to deliver to the Registrar of Companies a copy of the profit and loss account as permitted by section 444(5A) of the Companies Act 2006.</p>
+  <p>Approved by the board of directors and authorised for issue on 6 August 2026.</p>
+  <br/>
+  <p>
+    <strong>George Francis James Drewitt</strong><br/>
+    Director
+  </p>
+</div>
+
+</body>
+</html>

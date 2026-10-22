@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:bus="http://xbrl.frc.org.uk/cd/2025-01-01/business" xmlns:core="http://xbrl.frc.org.uk/fr/2025-01-01/core" xmlns:direp="http://xbrl.frc.org.uk/reports/2025-01-01/direp" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <meta content="application/xhtml+xml; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="IE=8" http-equiv="X-UA-Compatible" />
+    <title>ATTIRE CLOTHING LIMITED</title>
+    <style type="text/css">* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #7A8591;
+}
+body {
+  padding: 0;
+  margin: 15px auto;
+  text-rendering: geometricPrecision;
+  font-family: Verdana;
+  counter-reset: section;
+  font-size: 11px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+p {
+  margin-bottom: 1.3em;
+  line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: bold;
+  line-height: 1.3;
+  page-break-after: avoid;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+  font-weight: 600;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+h5, h6 {font-size: 1em;}
+h6 {
+  font-weight: normal;
+  font-style: italic;
+}
+small, .font_small {font-size: 0.75em;}
+.signature {
+
+  margin-top: 40px;
+  margin-bottom: 5px;
+  width: 250px;
+}
+.number {
+  min-width: 136px;
+  white-space: nowrap;
+  text-align: right;
+}
+.consolidated_number {
+  min-width: 90px;
+  white-space: nowrap;
+  text-align: right;
+}
+.page {
+  position: relative;
+  background-color: white;
+  width: 210mm;
+  padding: 16mm;
+  margin: 10mm auto;
+  box-shadow: 0 20px 40px 0 rgba(52, 62, 75, .2);
+}
+@page landscape {
+  size: A4 landscape;
+  padding: 0;
+  margin: 16mm;
+  margin-top: 36mm;
+  @top-center { content: element(running-header, first) }
+  @bottom-center { 
+    content: counter(page);
+    font-family: Verdana;
+    font-size: 11px;
+   }
+}
+.page-landscape {
+  page: landscape;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  padding: 16mm;
+  margin: 10mm auto;
+  box-shadow: 0 20px 40px 0 rgba(52, 62, 75, .2);
+  page-break-inside: avoid;
+}
+.page-break {
+  page-break-before: always;
+  height: 0px;
+  width: calc(100% + 40mm);
+  margin-left: -20mm;
+  margin-top: 10mm;
+}
+.intro {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+table {
+  width: 100%;
+  font-size: 11px;
+  border-spacing: 0;
+  margin-bottom: 40px;
+  page-break-inside: avoid;
+}
+table thead {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+table th {
+  font-weight: bold;
+}
+table tr {
+  min-height: 5px;
+}
+table tr:nth-child(even) {
+  background-color: rgba(0,0,0,.1);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+table .border {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+table .border-bottom {
+  border-bottom: 1px solid black;
+}
+table .border-bottom-double {
+  border-bottom: double;
+}
+table .border-top-double {
+  border-top: double;
+}
+table .border-top {
+  border-top: 1px solid black;
+}
+table tr td {
+  padding: 4px;
+}
+table .bold {
+  font-weight: bold;
+}
+.header-company {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.header-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.header-sub {
+  font-size: 10px;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+@page {
+  size: A4 portrait;
+  padding: 0;
+  margin: 16mm;
+  margin-top: 36mm;
+  @top-center { content: element(running-header, first) }
+  @bottom-center { 
+    content: counter(page);
+    font-family: Verdana;
+    font-size: 11px;
+  }
+}
+@page :first {
+  margin-top: 6mm;
+  @bottom-center { content: ''; }
+}
+
+div.running-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.running-header:nth-of-type(3) {
+  display: none;
+}
+@media print {
+  html, body {
+    background-color: transparent;
+  }
+  .page {
+    margin: 0;
+    padding: 0;
+    border: initial;
+    border-radius: initial;
+    width: 100%;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+  .page-landscape {
+    width: 265mm;
+    margin: 0;
+    padding: 0;
+    border: initial;
+    border-radius: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+  .page-break {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    width: 100%;
+  }
+  .toc-page {
+    display: none;
+  }
+  div.running-header {
+    display: block;
+    text-align: center;
+    position: running(running-header);
+    margin-bottom: 0;
+  }
+}
+ul.toc a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+ol.toc a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+ul.toc,
+ol.toc {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.remove-styling h1,
+.remove-styling h2,
+.remove-styling h3,
+.remove-styling h4 {
+  font-size: 11px;
+  margin: 0;
+  font-weight: bold;
+}
+.remove-styling table thead {
+  text-transform: none;
+}
+
+* {
+  font-size: 11px !important;
+}
+.intro h1,
+.intro h3,
+.intro div,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.intro h1,
+.header-company,
+.header-title {
+  margin: 0px;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.header-sub {
+  font-weight: bold;
+  line-height: 1.6;
+}
+#toc a,
+.toc a {
+  text-decoration: none;
+  color: inherit;
+}
+table .border {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+table .border-bottom {
+  border-bottom: 1px solid black;
+}
+table .table-text-indent {
+  padding-left: 2em;
+}</style>
+  </head>
+  <body>
+    <div style="display:none">
+      <ix:header>
+        <ix:hidden>
+          <ix:nonNumeric contextRef="D0" name="bus:NameProductionSoftware">Silverfin</ix:nonNumeric>
+          <ix:nonNumeric contextRef="D1" name="bus:AccountsType"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="D2" name="bus:AccountingStandardsApplied"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="D0" name="bus:ReportIncludesDetailedProfitLossStatementTruefalse">false</ix:nonNumeric>
+          <ix:nonNumeric contextRef="D3" name="bus:AccountsStatusAuditedOrUnaudited"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="D0" name="bus:EntityDormantTruefalse">false</ix:nonNumeric>
+          <ix:nonNumeric contextRef="D0" name="bus:EntityTradingStatus"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="I0" format="ixt2:datedaymonthyear" name="bus:EndDateForPeriodCoveredByReport">31/12/2025</ix:nonNumeric>
+          <ix:nonNumeric contextRef="I0" format="ixt2:datedaymonthyear" name="bus:StartDateForPeriodCoveredByReport">01/01/2025</ix:nonNumeric>
+          <ix:nonNumeric contextRef="D4" name="bus:LegalFormEntity"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="I0" format="ixt2:datedaymonthyear" name="bus:BalanceSheetDate">31/12/2025</ix:nonNumeric>
+          <ix:nonNumeric contextRef="D5" name="bus:NameEntityOfficer">F J Bradley </ix:nonNumeric>
+          <ix:nonNumeric contextRef="I1" format="ixt2:datedaymonthyear" name="direp:DateAssumedPosition">29/10/1999 </ix:nonNumeric>
+          <ix:nonNumeric contextRef="D6" name="bus:NameEntityOfficer">V M Bradley </ix:nonNumeric>
+          <ix:nonNumeric contextRef="I2" format="ixt2:datedaymonthyear" name="direp:DateAssumedPosition">09/10/2014 </ix:nonNumeric>
+          <ix:nonNumeric contextRef="D7" name="bus:NameEntityOfficer">R D Crawford </ix:nonNumeric>
+          <ix:nonNumeric contextRef="I3" format="ixt2:datedaymonthyear" name="direp:DateAssumedPosition">15/12/2006 </ix:nonNumeric>
+          <ix:nonNumeric contextRef="D8" name="bus:NameEntityOfficer">K J Higham </ix:nonNumeric>
+          <ix:nonNumeric contextRef="I4" format="ixt2:datedaymonthyear" name="direp:DateAssumedPosition">15/12/2006 </ix:nonNumeric>
+          <ix:nonNumeric contextRef="D5" name="core:DirectorSigningFinancialStatements"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="D5" name="direp:DirectorSigningDirectorsReport"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="I0" format="ixt2:datedaymonthyearen" name="core:DateAuthorisationFinancialStatementsForIssue">22 July 2026</ix:nonNumeric>
+          <ix:nonNumeric contextRef="D0" name="bus:DescriptionPrincipalActivities"> 
+               The principal activity of the company in the year under review was that of importing and wholesaling of fashion clothing.</ix:nonNumeric>
+        </ix:hidden>
+        <ix:references>
+          <link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd" xlink:type="simple" /></ix:references>
+        <ix:resources>
+          <xbrli:context id="I0">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I3">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I4">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director4</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I5">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I6">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I7">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I8">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I9">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I10">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:EquityClassesDimension">core:CapitalRedemptionReserve</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I11">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:EquityClassesDimension">core:CapitalRedemptionReserve</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I12">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I13">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I14">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I15">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I16">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I17">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I18">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I19">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I20">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I21">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I22">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I23">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I24">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I25">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I26">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I27">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:BetweenOneFiveYears</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="I28">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:BetweenOneFiveYears</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D0">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:FilletedAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:SmallEntities</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D3">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExemptWithAccountantsReport</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D4">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D5">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D6">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D7">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D8">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director4</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D9">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:RangeDimension">core:TopRangeValue</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D10">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:RangeDimension">core:TopRangeValue</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D11">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:RangeDimension">core:TopRangeValue</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D12">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:RangeDimension">core:TopRangeValue</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D13">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D14">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D15">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D16">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D17">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D18">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D19">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D20">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D21">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="D22">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">03868413</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:typedMember dimension="core:X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension">
+                  <core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>1</core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>
+                </xbrldi:typedMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2025-01-01</xbrli:startDate>
+              <xbrli:endDate>2025-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:unit id="U-iso4217-GBP">
+            <xbrli:measure>iso4217:GBP</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="U-xbrli-pure">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="U-xbrli-shares">
+            <xbrli:measure>xbrli:shares</xbrli:measure>
+          </xbrli:unit>
+        </ix:resources>
+      </ix:header>
+    </div>
+    <div class="page">
+      <p class="right">
+        <b>Company No:
+          <ix:nonNumeric contextRef="D0" name="bus:UKCompaniesHouseRegisteredNumber">03868413</ix:nonNumeric> (England and Wales)</b>
+      </p>
+      <div class="intro">
+        <h1>
+          <ix:nonNumeric contextRef="D0" name="bus:EntityCurrentLegalOrRegisteredName">ATTIRE CLOTHING LIMITED</ix:nonNumeric>
+        </h1>
+        <h3>
+          <ix:nonNumeric contextRef="D0" name="bus:ReportTitle">Unaudited Financial Statements
+            <br />For the financial year ended 31 December 2025
+            <br />Pages for filing with the registrar        </ix:nonNumeric>
+        </h3>
+      </div>
+    </div>
+    <div class="page-break"></div>
+    <div class="page">
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">Unaudited Financial Statements</h2>
+        <div class="header-sub">For the financial year ended 31 December 2025</div>
+      </div>
+      <p>
+        <b>Contents</b>
+      </p>
+      <ul class="toc">
+        <li>
+          <a href="#company_information">Company Information</a>
+        </li>
+        <li>
+          <a href="#balance_sheet">Balance Sheet</a>
+        </li>
+        <li>
+          <a href="#notes_to_fs">Notes to the Financial Statements</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-break"></div>
+    <div class="page">
+      <div id="company_information"></div>
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">COMPANY INFORMATION</h2>
+        <div class="header-sub">For the financial year ended 31 December 2025</div>
+      </div>
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">COMPANY INFORMATION (continued)</h2>
+        <div class="header-sub">For the financial year ended 31 December 2025</div>
+      </div>
+      <table>
+        <tr>
+          <td class="bold" style="width: 50%">                  DIRECTORS</td>
+          <td>                  F J Bradley </td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                  V M Bradley </td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                  R D Crawford </td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                  K J Higham </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td class="bold" style="width: 50%">                  SECRETARY</td>
+          <td>                  V M Bradley</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td class="bold" style="width: 50%">                  REGISTERED OFFICE</td>
+          <td>                  Attire House Bird Hall Lane</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                   Cheadle Heath</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                   Stockport</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                   SK3 0SB</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 50%"></td>
+          <td>                   United Kingdom</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td class="bold" style="width: 50%">                  COMPANY NUMBER</td>
+          <td>                  03868413 (England and Wales)</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td class="bold" style="width: 50%">                  ACCOUNTANT</td>
+          <td>                  S&amp;W Partners (Manchester) Limited</td>
+        </tr>
+        <tr>
+          <td style="width: 50%"></td>
+          <td>                  Pall Mall</td>
+        </tr>
+        <tr>
+          <td style="width: 50%"></td>
+          <td>                  1 Pollen Square</td>
+        </tr>
+        <tr>
+          <td style="width: 50%"></td>
+          <td>                  59 King Street</td>
+        </tr>
+        <tr>
+          <td style="width: 50%"></td>
+          <td>                  Manchester</td>
+        </tr>
+        <tr>
+          <td style="width: 50%"></td>
+          <td>                  M2 4PD</td>
+        </tr>
+      </table>
+    </div>
+    <div class="page-break"></div>
+    <div class="page">
+      <div id="balance_sheet"></div>
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">BALANCE SHEET</h2>
+        <div class="header-sub">As at 31 December 2025</div>
+      </div>
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">BALANCE SHEET (continued)</h2>
+        <div class="header-sub">As at 31 December 2025</div>
+      </div>
+      <table>
+        <tr>
+          <td></td>
+          <td class="bold">Note</td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td class="bold">Fixed assets</td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td>Tangible assets</td>
+          <td>4</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 6,848</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 69,159</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number bold border-top border-bottom">6,848</td>
+          <td></td>
+          <td class="number bold border-top border-bottom">69,159</td>
+        </tr>
+        <tr>
+          <td class="bold">Current assets</td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td>Stocks</td>
+          <td>5</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:TotalInventories" scale="0" unitRef="U-iso4217-GBP"> 300,609</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:TotalInventories" scale="0" unitRef="U-iso4217-GBP"> 858,726</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td>Debtors</td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:Debtors" scale="0" unitRef="U-iso4217-GBP"> 916,488</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:Debtors" scale="0" unitRef="U-iso4217-GBP"> 1,751,200</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td>Cash at bank and in hand</td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:CashBankOnHand" scale="0" unitRef="U-iso4217-GBP"> 3,583,821</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:CashBankOnHand" scale="0" unitRef="U-iso4217-GBP"> 3,352,627</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number bold border-top">4,800,918</td>
+          <td></td>
+          <td class="number bold border-top">5,962,553</td>
+        </tr>
+        <tr>
+          <td class="bold"></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td>Creditors: amounts falling due within one year</td>
+          <td>6</td>
+          <td class="number">(
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:Creditors" scale="0" unitRef="U-iso4217-GBP"> 1,897,928</ix:nonFraction>)</td>
+          <td></td>
+          <td class="number">(
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:Creditors" scale="0" unitRef="U-iso4217-GBP"> 2,367,858</ix:nonFraction>)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td class="bold">Net current assets</td>
+          <td></td>
+          <td class="number bold border">2,902,990</td>
+          <td></td>
+          <td class="number bold border">3,594,695</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td class="bold">Total assets less current liabilities</td>
+          <td></td>
+          <td class="number bold border-bottom">2,909,838</td>
+          <td></td>
+          <td class="number bold border-bottom">3,663,854</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td>Provision for liabilities</td>
+          <td>7</td>
+          <td class="number">(
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:OtherProvisionsBalanceSheetSubtotal" scale="0" unitRef="U-iso4217-GBP"> 1,712</ix:nonFraction>)</td>
+          <td></td>
+          <td class="number">(
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:OtherProvisionsBalanceSheetSubtotal" scale="0" unitRef="U-iso4217-GBP"> 17,044</ix:nonFraction>)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td class="bold">Net assets</td>
+          <td></td>
+          <td class="number bold border-bottom-double border-top">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:NetAssetsLiabilities" scale="0" unitRef="U-iso4217-GBP">2,908,126</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number bold border-bottom-double border-top">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:NetAssetsLiabilities" scale="0" unitRef="U-iso4217-GBP"> 3,646,810</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td>
+            <b>Capital and reserves</b>
+          </td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td>Called-up share capital</td>
+          <td>8</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I8" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 680 </ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I9" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 680 </ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td>Capital redemption reserve</td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I10" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 500 </ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I11" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 500 </ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td>Profit and loss account</td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I12" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 2,906,946 </ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I13" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 3,645,630 </ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td class="bold"> Total shareholder's funds</td>
+          <td></td>
+          <td class="number bold border-top border-bottom-double">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 2,908,126</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number bold border-top border-bottom-double">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:Equity" scale="0" unitRef="U-iso4217-GBP"> 3,646,810</ix:nonFraction>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <p>
+        <ix:nonNumeric contextRef="D0" name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">For the financial year ending 31 December 2025 the Company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric>
+      </p>
+      <p>Directors' responsibilities:</p>
+      <ul>
+        <li>
+          <ix:nonNumeric contextRef="D0" name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">The member has not required the Company to obtain an audit of its financial statements for the financial year in accordance with section 476;</ix:nonNumeric>
+        </li>
+        <li>
+          <ix:nonNumeric contextRef="D0" name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements; and</ix:nonNumeric>
+        </li>
+        <li>
+          <ix:nonNumeric contextRef="D0" name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">These financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime and a copy of the Profit and Loss Account has not been delivered.</ix:nonNumeric>
+        </li>
+      </ul>
+      <p> The financial statements of  Attire Clothing Limited (registered number: 
+        <ix:nonNumeric contextRef="D0" name="bus:UKCompaniesHouseRegisteredNumber">03868413</ix:nonNumeric>) were approved and authorised for issue by 
+        <ix:nonNumeric contextRef="D0" name="core:DescriptionBodyAuthorisingFinancialStatements">the Board of Directors</ix:nonNumeric> on
+        <ix:nonNumeric contextRef="I0" format="ixt2:datedaymonthyearen" name="core:DateAuthorisationFinancialStatementsForIssue">22 July 2026</ix:nonNumeric>.  They were signed on its behalf by:</p>
+      <table>
+        <tr>
+          <td style="width:40%">
+            <div class="signature">F J Bradley
+              <br />Director</div>
+          </td>
+          <td style="width:20%"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="page-break"></div>
+    <div class="page">
+      <div id="notes_to_fs"></div>
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">NOTES TO THE FINANCIAL STATEMENTS</h2>
+        <div class="header-sub">For the financial year ended 31 December 2025 </div>
+      </div>
+      <div class="running-header">
+        <div class="header-company">ATTIRE CLOTHING LIMITED</div>
+        <h2 class="header-title">NOTES TO THE FINANCIAL STATEMENTS</h2>
+        <div class="header-sub">For the financial year ended 31 December 2025</div>
+      </div>
+      <h5>
+        <b>1. Accounting policies</b>
+      </h5>
+      <p>              The principal accounting policies are summarised below. They have all been applied consistently throughout the financial year and to the preceding financial year, unless otherwise stated.</p>
+      <h5>
+        <b>General information and basis of accounting</b>
+      </h5>
+      <p> 
+               Attire Clothing Limited (the Company) is a private company, limited by shares, incorporated in the United Kingdom under the Companies Act 2006 and is registered in England and Wales. The address of the Company's registered office is Attire House Bird Hall Lane, Cheadle Heath, Stockport, SK3 0SB, United Kingdom.<br /><br />The financial statements have been prepared under the historical cost convention, modified to include certain items at fair value, and in accordance with ‘The Financial Reporting Standard applicable in the UK and the Republic of Ireland’ issued by the Financial Reporting Council, including Section 1A of Financial Reporting Standard 102 (FRS102), and the requirements of the Companies Act 2006  as applicable to companies subject to the small companies regime.<br /><br />Significant judgements and estimates<br />Estimates and judgements are continually evaluated and are based on historical experience and other factors, including expectations of future events that are believed to be reasonable under the circumstances. There are not considered to be any critical judgements in applying the company's accounting policies. The company makes estimates and assumptions concerning the future. The resulting accounting estimates will by definition, seldom equal the actual results.<br /><br />The estimates and assumptions that have a significant risk of causing a material adjustment to the carrying amounts of assets and liabilities within the next financial year are addressed below.<br /><br />The company makes an estimate of the recoveries value of trade and other debtors. When assessing impairment of trade and other debtor, management considers factors including the current credit rating of the debtor, the aging profile of debtors and historical experience. See note 12 for the net carrying amount of the debtors and associated impairment provision.</p>
+      <h5>
+        <b>Foreign currency</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:ForeignCurrencyTranslationOperationsPolicy">                Assets and liabilities in foreign currencies are translated into sterling at the rates of exchange ruling at the balance sheet date.  Transactions in foreign currencies are translated into sterling at the rate of exchange ruling at the date of transaction. Exchange differences are taken into account in arriving at the operating result.</ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Turnover</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:RevenueRecognitionPolicy">                Turnover represents amounts chargeable, net of value added tax, in respect of the sales clothing. Revenue is recognised at the point of delivery to the customer.</ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Taxation</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:TaxPolicy">
+          <em>Current tax</em>
+          <br />Taxation for the year comprises current and deferred tax. Tax is recognised in the Statement of Comprehensive Income, except to the extent that it relates to items recognised in other comprehensive income or directly in equity.<br /><br />Current or deferred taxation assets and liabilities are not discounted.<br /><br />Current tax is recognised at the amount of tax payable using the tax rates and laws that have been enacted or substantively enacted by the balance sheet date.
+          <br />
+          <br />
+          <em>Deferred tax</em>
+          <br />Deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date.<br /><br />Timing differences arise from the inclusion of income and expenses in tax assessments in periods different from those in which they are recognised in financial statements. Deferred tax is measured using tax rates and laws that have been enacted or substantively enacted by the year end and that are expected to apply to the reversal of the timing difference.<br /><br />Unrelieved tax losses and other deferred tax assets are recognised only to the extent that it is probable that they will be recovered against the reversal of deferred tax liabilities or other future taxable profits.</ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Pension costs and other post-retirement benefits</b>
+      </h5>
+      <p>              The company operates a defined contribution pension scheme.  Contributions payable to the company's pension scheme are charged to profit or loss in the period to which they relate.</p>
+      <h5>
+        <b>Tangible fixed assets</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:DescriptionDepreciationMethodForPropertyPlantEquipment">                Tangible assets are stated at cost less accumulated impairment losses. Cost includes the original purchase price, costs directly attributable to bringing the asset to its working condition for its intended use. Depreciation is provided at the following annual rates in order to write off each asset over its estimated useful life.</ix:nonNumeric>
+      </p>
+      <table>
+        <tr>
+          <td style="width: 40%">                  Leasehold improvements</td>
+          <td style="width: 60%"> 
+            <ix:nonFraction contextRef="D9" decimals="0" format="ixt2:numdotdecimal" name="core:UsefulLifePropertyPlantEquipmentYears" scale="0" unitRef="U-xbrli-pure">6.67 </ix:nonFraction>years straight line</td>
+        </tr>
+        <tr>
+          <td style="width: 40%">                  Plant and machinery</td>
+          <td style="width: 60%"> 
+            <ix:nonFraction contextRef="D10" decimals="0" format="ixt2:numdotdecimal" name="core:UsefulLifePropertyPlantEquipmentYears" scale="0" unitRef="U-xbrli-pure">3 </ix:nonFraction>years straight line</td>
+        </tr>
+        <tr>
+          <td style="width: 40%">                  Vehicles</td>
+          <td style="width: 60%"> 
+            <ix:nonFraction contextRef="D11" decimals="0" format="ixt2:numdotdecimal" name="core:UsefulLifePropertyPlantEquipmentYears" scale="0" unitRef="U-xbrli-pure">4 </ix:nonFraction>years straight line</td>
+        </tr>
+        <tr>
+          <td style="width: 40%">                  Fixtures and fittings</td>
+          <td style="width: 60%"> 
+            <ix:nonFraction contextRef="D12" decimals="0" format="ixt2:numdotdecimal" name="core:UsefulLifePropertyPlantEquipmentYears" scale="0" unitRef="U-xbrli-pure">6.67 </ix:nonFraction>years straight line</td>
+        </tr>
+      </table>
+      <h5>
+        <b>Leases</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:LeasesPolicy">
+          <em>The Company as lessee</em>
+          <br />                Rentals under operating leases are charged on a straight-line basis over the lease term, even if the payments are not made on such a basis.  Benefits received and receivable as an incentive to sign an operating lease are similarly spread on a straight-line basis over the lease term.
+          <br />
+        </ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Impairment of assets</b>
+      </h5>
+      <p>Assets, other than those measured at fair value, are assessed for indicators of impairment at each Balance Sheet date. If there is objective evidence of impairment, an impairment loss is recognised in the Profit and Loss Account as described below.</p>
+      <h5>
+        <b>Stocks</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:InventoriesPolicy">                Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Stocks are recognised as an expense in the period in which the related revenue is recognised.<br /><br />Cost is determined on the actual cost method. Cost includes the purchase price, including taxes and duties and transport and handling directly attributable to bringing the stock to its present location and condition.<br /><br />At the end of each reporting period stocks are assessed for impairment. If an item of stock is impaired, the identified stock is reduced to its selling price less costs to complete and sell and an impairment is recognised the impairment charge is reversed, up to the original impairment loss, and is recognised as a credit in the profit and loss account. </ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Cash and cash equivalents</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:CashCashEquivalentsPolicy">                Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with banks, other short-term liquid investments with original maturities of three months or less, and bank overdrafts. Bank overdrafts are shown within borrowings in creditors: amounts falling due within one year.</ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Provisions</b>
+      </h5>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:ProvisionsPolicy">                Provisions are recognised when the Company has a present obligation (legal or constructive) as a result of a past event, it is probable that the Company will be required to settle that obligation and a reliable estimate can be made of the amount of the obligation.<br /><br />The amount recognised as a provision is the best estimate of the consideration required to settle the present obligation at the Balance Sheet date, taking into account the risks and uncertainties surrounding the obligation. Where a provision is measured using the cash flows estimated to settle the present obligation, its carrying amount is the present value of those cash flows (when the effect of the time value of money is material).<br /><br />When some or all of the economic benefits required to settle a provision are expected to be recovered from a third party, a receivable is recognised as an asset if it is virtually certain that reimbursement will be received and the amount of the receivable can be measured reliably.</ix:nonNumeric>
+      </p>
+      <h5>
+        <b>Financial assets</b>
+      </h5>
+      <p>              Basic financial assets, including trade and other debtors and cash and bank balances, are initially recognised at transaction price, unless the arrangement constitutes a financing transaction.<br /><br />Such assets are subsequently carried at amortised cost using the effective interest method.<br /><br />At the end of each reporting period financial assets measured at amortised cost are assessed for objective evidence of impairment.The impairment loss is recognised in the profit or loss.<br /><br />There are no assets which are initially measured at fair value.</p>
+      <h5>
+        <b>Financial liabilities</b>
+      </h5>
+      <p>              Basic financial liabilities, including trade and other creditors and amounts owed to group undertakings, are initially recognised at transaction price, unless the arrangement constitutes a financing transaction, where the debt instrument is measured at the present value of the future receipts discounted at a market rate of interest.<br /><br />Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.</p>
+    </div>
+    <div class="page">
+      <h4>
+        <b>2. Employees</b>
+      </h4>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">Number</td>
+          <td></td>
+          <td class="number bold">Number</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Monthly average number of persons employed by the Company during the year, including directors</td>
+          <td class="number border-bottom-double">
+            <ix:nonFraction contextRef="D0" decimals="0" format="ixt2:numdotdecimal" name="core:AverageNumberEmployeesDuringPeriod" scale="0" unitRef="U-xbrli-pure">24</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number border-bottom-double">
+            <ix:nonFraction contextRef="D13" decimals="0" format="ixt2:numdotdecimal" name="core:AverageNumberEmployeesDuringPeriod" scale="0" unitRef="U-xbrli-pure">24</ix:nonFraction>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <h4>
+        <b>3. Dividends on equity shares</b>
+      </h4>
+      <table>
+        <tr>
+          <td></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Amounts recognised as distributions to equity holders in the financial year:</td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Final dividend for the financial year ended 31 December 2025 of £2,429 (2024: £699) per ordinary share</td>
+          <td class="number border-bottom-double">1,214,544</td>
+          <td></td>
+          <td class="number border-bottom-double">349,544</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <h4>
+        <b>4. Tangible assets</b>
+      </h4>
+      <p></p>
+      <table>
+        <tr>
+          <td style="width: 21%"></td>
+          <td class="right bold" style="width: 15%">                  Leasehold improve-<br />ments</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">                  Plant and machinery</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">                  Vehicles</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">                  Fixtures and fittings</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">Total</td>
+        </tr>
+        <tr>
+          <td style="width: 21%"></td>
+          <td class="right bold" style="width: 15%">£</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">£</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">£</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">£</td>
+          <td style="width: 1%"></td>
+          <td class="right bold" style="width: 15%">£</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 21%">                  Cost</td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  At 01 January 2025</td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I14" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 55,491</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I15" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 140,348</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I16" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 107,684</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I17" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 26,806</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 330,329</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  Additions</td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D14" decimals="0" format="ixt2:numdotdecimal" name="core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D15" decimals="0" format="ixt2:numdotdecimal" name="core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 3,224</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D16" decimals="0" format="ixt2:numdotdecimal" name="core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D17" decimals="0" format="ixt2:numdotdecimal" name="core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D0" decimals="0" format="ixt2:numdotdecimal" name="core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 3,224</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  Disposals</td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D14" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D15" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">(
+            <ix:nonFraction contextRef="D16" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsPropertyPlantEquipment" scale="0" sign="-" unitRef="U-iso4217-GBP">107,684</ix:nonFraction>)</td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D17" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">(
+            <ix:nonFraction contextRef="D0" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsPropertyPlantEquipment" scale="0" sign="-" unitRef="U-iso4217-GBP">107,684</ix:nonFraction>)</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 21%">                  At 31 December 2025</td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I18" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 55,491</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I19" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 143,572</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I20" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I21" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 26,806</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:PropertyPlantEquipmentGrossCost" scale="0" unitRef="U-iso4217-GBP"> 225,869</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 21%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 21%">                  Accumulated depreciation</td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  At 01 January 2025</td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I14" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 55,491</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I15" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 136,878</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I16" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 44,868</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I17" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 23,933</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 261,170</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  Charge for the financial year</td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D14" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D15" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 1,974</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D16" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 15,704</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D17" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 745</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D0" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 18,423</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  Disposals</td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D14" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D15" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">(
+            <ix:nonFraction contextRef="D16" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment" scale="0" sign="-" unitRef="U-iso4217-GBP">60,572</ix:nonFraction>)</td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">
+            <ix:nonFraction contextRef="D17" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%">(
+            <ix:nonFraction contextRef="D0" decimals="0" format="ixt2:numdotdecimal" name="core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment" scale="0" sign="-" unitRef="U-iso4217-GBP">60,572</ix:nonFraction>)</td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 21%">                  At 31 December 2025</td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I18" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 55,491</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I19" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 138,852</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I20" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 0</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I21" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 24,678</ix:nonFraction>
+          </td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-top border-bottom-double" style="width: 15%">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" scale="0" unitRef="U-iso4217-GBP"> 219,021</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 21%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 21%">                  Net book value</td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+          <td style="width: 1%"></td>
+          <td class="right" style="width: 15%"></td>
+        </tr>
+        <tr>
+          <td class="bold" style="width: 21%">                  At 31 December 2025</td>
+          <td class="right bold border-bottom-double" style="width: 15%">0</td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-bottom-double" style="width: 15%">4,720</td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-bottom-double" style="width: 15%">0</td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-bottom-double" style="width: 15%">2,128</td>
+          <td style="width: 1%"></td>
+          <td class="right bold border-bottom-double" style="width: 15%">6,848</td>
+        </tr>
+        <tr>
+          <td style="width: 21%">                  At 31 December 2024</td>
+          <td class="right border-bottom-double" style="width: 15%">0</td>
+          <td style="width: 1%"></td>
+          <td class="right border-bottom-double" style="width: 15%">3,470</td>
+          <td style="width: 1%"></td>
+          <td class="right border-bottom-double" style="width: 15%">62,816</td>
+          <td style="width: 1%"></td>
+          <td class="right border-bottom-double" style="width: 15%">2,873</td>
+          <td style="width: 1%"></td>
+          <td class="right border-bottom-double" style="width: 15%">69,159</td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <h4>
+        <b>5. Stocks</b>
+      </h4>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                      Stocks         </td>
+          <td class="number border-bottom-double">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:TotalInventories" scale="0" unitRef="U-iso4217-GBP">300,609</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number border-bottom-double">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:TotalInventories" scale="0" unitRef="U-iso4217-GBP"> 858,726</ix:nonFraction>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <h4>
+        <b>6. Creditors: amounts falling due within one year</b>
+      </h4>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Trade creditors</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:TradeCreditorsTradePayables" scale="0" unitRef="U-iso4217-GBP">133,559</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:TradeCreditorsTradePayables" scale="0" unitRef="U-iso4217-GBP">452,277</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Amounts owed to Group undertakings</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:AmountsOwedToGroupUndertakingsParticipatingInterests" scale="0" unitRef="U-iso4217-GBP">1,564,689</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:AmountsOwedToGroupUndertakingsParticipatingInterests" scale="0" unitRef="U-iso4217-GBP">1,567,305</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Taxation and social security</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:OtherTaxationPayable" scale="0" unitRef="U-iso4217-GBP">152,015</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:OtherTaxationPayable" scale="0" unitRef="U-iso4217-GBP">259,039</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Other creditors</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:OtherCreditors" scale="0" unitRef="U-iso4217-GBP">47,665</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:OtherCreditors" scale="0" unitRef="U-iso4217-GBP">89,237</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold border-top border-bottom-double">
+            <ix:nonFraction contextRef="I6" decimals="0" format="ixt2:numdotdecimal" name="core:Creditors" scale="0" unitRef="U-iso4217-GBP"> 1,897,928</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number bold border-top border-bottom-double">
+            <ix:nonFraction contextRef="I7" decimals="0" format="ixt2:numdotdecimal" name="core:Creditors" scale="0" unitRef="U-iso4217-GBP"> 2,367,858</ix:nonFraction>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <h4>
+        <b>7. Deferred tax</b>
+      </h4>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  At the beginning of financial year</td>
+          <td class="number">(
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:NetDeferredTaxLiabilityAsset" scale="0" unitRef="U-iso4217-GBP">17,044</ix:nonFraction>)</td>
+          <td></td>
+          <td class="number">(
+            <ix:nonFraction contextRef="I22" decimals="0" format="ixt2:numdotdecimal" name="core:NetDeferredTaxLiabilityAsset" scale="0" unitRef="U-iso4217-GBP">23,642</ix:nonFraction>)</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Credited to the Profit and Loss Account</td>
+          <td class="number">
+            <ix:nonFraction contextRef="D0" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseDecreaseInNetDeferredTaxLiabilityFromAmountRecognisedInProfitOrLoss" scale="0" unitRef="U-iso4217-GBP">15,332</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="D13" decimals="0" format="ixt2:numdotdecimal" name="core:IncreaseDecreaseInNetDeferredTaxLiabilityFromAmountRecognisedInProfitOrLoss" scale="0" unitRef="U-iso4217-GBP">6,598</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  At the end of financial year</td>
+          <td class="number bold border-top border-bottom-double">(
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:NetDeferredTaxLiabilityAsset" scale="0" unitRef="U-iso4217-GBP">1,712</ix:nonFraction>)</td>
+          <td></td>
+          <td class="number bold border-top border-bottom-double">(
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:NetDeferredTaxLiabilityAsset" scale="0" unitRef="U-iso4217-GBP">17,044</ix:nonFraction>)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="page">
+      <h4>
+        <b>8. Called-up share capital</b>
+      </h4>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£ </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">
+            <b>Allotted, called-up and fully-paid</b>
+          </td>
+          <td class="number"></td>
+          <td></td>
+          <td class="number"></td>
+        </tr>
+        <tr>
+          <td style="width: 100%">
+            <ix:nonFraction contextRef="I23" decimals="0" format="ixt2:numdotdecimal" name="core:NumberSharesIssuedFullyPaid" scale="0" unitRef="U-xbrli-shares">500</ix:nonFraction>
+            <ix:nonNumeric contextRef="D18" name="bus:DescriptionShareType">                     Ordinary shares</ix:nonNumeric> of £
+            <ix:nonFraction contextRef="D18" decimals="2" format="ixt2:numdotdecimal" name="core:ParValueShare" scale="0" unitRef="U-iso4217-GBP">1.00</ix:nonFraction> each </td>
+          <td class="number">
+            <ix:nonFraction contextRef="D18" decimals="0" format="ixt2:numdotdecimal" name="core:NominalValueAllottedShareCapital" scale="0" unitRef="U-iso4217-GBP">500</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="D19" decimals="0" format="ixt2:numdotdecimal" name="core:NominalValueAllottedShareCapital" scale="0" unitRef="U-iso4217-GBP">500</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">
+            <ix:nonFraction contextRef="I24" decimals="0" format="ixt2:numdotdecimal" name="core:NumberSharesIssuedFullyPaid" scale="0" unitRef="U-xbrli-shares">180</ix:nonFraction>
+            <ix:nonNumeric contextRef="D20" name="bus:DescriptionShareType">                     Ordinary A shares</ix:nonNumeric> of £
+            <ix:nonFraction contextRef="D20" decimals="2" format="ixt2:numdotdecimal" name="core:ParValueShare" scale="0" unitRef="U-iso4217-GBP">1.00</ix:nonFraction> each </td>
+          <td class="number">
+            <ix:nonFraction contextRef="D20" decimals="0" format="ixt2:numdotdecimal" name="core:NominalValueAllottedShareCapital" scale="0" unitRef="U-iso4217-GBP">180</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="D21" decimals="0" format="ixt2:numdotdecimal" name="core:NominalValueAllottedShareCapital" scale="0" unitRef="U-iso4217-GBP">180</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold border-top border-bottom-double">680</td>
+          <td></td>
+          <td class="number bold border-top border-bottom-double">680</td>
+        </tr>
+      </table>
+      <p>
+        <ix:nonNumeric contextRef="D0" name="core:ShareCapitalFree-textComment">                Ordinary shares rank pari passu. A Ordinary shares are not entitled to vote and have no right to share in any surplus. All shares are entitled to dividends as declared by each class.</ix:nonNumeric>
+      </p>
+    </div>
+    <div class="page">
+      <h4>
+        <b>9. Financial commitments</b>
+      </h4>
+      <p>
+        <b>Commitments</b>
+      </p>
+      <p>Total future minimum lease payments under non-cancellable operating leases are as follows:</p>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">Within one year</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I25" decimals="0" format="ixt2:numdotdecimal" name="core:FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases" scale="0" unitRef="U-iso4217-GBP">9,237</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I26" decimals="0" format="ixt2:numdotdecimal" name="core:FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases" scale="0" unitRef="U-iso4217-GBP">10,514</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">Between one and five years</td>
+          <td class="number">
+            <ix:nonFraction contextRef="I27" decimals="0" format="ixt2:numdotdecimal" name="core:FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases" scale="0" unitRef="U-iso4217-GBP">6,158</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number">
+            <ix:nonFraction contextRef="I28" decimals="0" format="ixt2:numdotdecimal" name="core:FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases" scale="0" unitRef="U-iso4217-GBP">13,307</ix:nonFraction>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 100%">Total future minimum lease payments under non-cancellable operating leases</td>
+          <td class="number  bold border-top border-bottom-double">
+            <ix:nonFraction contextRef="I0" decimals="0" format="ixt2:numdotdecimal" name="core:FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases" scale="0" unitRef="U-iso4217-GBP">15,395</ix:nonFraction>
+          </td>
+          <td></td>
+          <td class="number  bold border-top border-bottom-double">
+            <ix:nonFraction contextRef="I5" decimals="0" format="ixt2:numdotdecimal" name="core:FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases" scale="0" unitRef="U-iso4217-GBP">23,821</ix:nonFraction>
+          </td>
+        </tr>
+      </table>
+      <ix:nonNumeric contextRef="D0" name="core:DescriptionFinancialCommitmentsOtherThanCapitalCommitments">
+        <p>                The finance leases relate to motor vehicles used in the company's operations. There are no contingent, rental, renewal of purchase option clauses.</p>
+      </ix:nonNumeric>
+    </div>
+    <div class="page">
+      <h4>
+        <b>10. Related party transactions</b>
+      </h4>
+      <p>
+        <b>                Transactions with the entity's directors</b>
+      </p>
+      <table>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">2025</td>
+          <td></td>
+          <td class="number bold">2024</td>
+        </tr>
+        <tr>
+          <td style="width: 100%"></td>
+          <td class="number bold">£</td>
+          <td></td>
+          <td class="number bold">£</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Balance outstanding at the start of the year</td>
+          <td class="number">5,300</td>
+          <td></td>
+          <td class="number">6,500</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Advances</td>
+          <td class="number">0</td>
+          <td></td>
+          <td class="number">0</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Credits</td>
+          <td class="number">(1,200)</td>
+          <td></td>
+          <td class="number">(1,200)</td>
+        </tr>
+        <tr>
+          <td style="width: 100%">                  Balance outstanding at the end of the year</td>
+          <td class="number">4,100</td>
+          <td></td>
+          <td class="number">5,300</td>
+        </tr>
+      </table>
+      <p>              Advances</p>
+      <p>              A director has given a guarantee to secure all liabilities of Attire Clothing Limited, limited to £250,000.</p>
+    </div>
+    <div class="page">
+      <h4>
+        <b>11. Ultimate controlling party</b>
+      </h4>
+      <p>Parent Company:</p>
+      <table>
+        <tr>
+          <td>
+            <ix:nonNumeric contextRef="D0" name="core:NameParentEntity">                    Attire Clothing (Holdings) Limited</ix:nonNumeric>
+          </td>
+        </tr>
+        <tr>
+          <td>                Attire House Bird Hall Lane, Cheadle Heath, Stockport, SK3 0SB</td>
+        </tr>
+      </table>
+      <p>
+        <ix:nonNumeric contextRef="D22" name="core:InformationOnControllingPartyIncludingDescriptionRelationship">                The ultimate controlling party is F Bradley.</ix:nonNumeric>
+      </p>
+    </div>
+  </body>
+</html>

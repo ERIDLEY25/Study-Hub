@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2010-04-20" xmlns:ixt2015="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:direp="http://xbrl.frc.org.uk/reports/2024-01-01/direp" xmlns:core="http://xbrl.frc.org.uk/fr/2024-01-01/core" xmlns:bus="http://xbrl.frc.org.uk/cd/2024-01-01/business" xmlns:common="http://xbrl.frc.org.uk/general/2024-01-01/common" xmlns:dpl="http://xbrl.frc.org.uk/dpl/2024-01-01" xmlns:comp="http://www.hmrc.gov.uk/schemas/ct/comp/2024-01-01" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="application/xhtml+xml; charset=UTF-8" />
+        <title>D-Luxe Fitouts Ltd</title>
+        <style type="text/css">
+    body {
+        font-size: 16px;
+        line-height: 1.25;
+        color: #000A1E;
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    table {
+        border: 0;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .cover-heading {
+        display: block;
+        color: #003C64;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0 0 12px 0;
+    }
+
+    h1 {
+        display: block;
+        color: #003C64;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0 0 12px 0;
+    }
+
+    h2 {
+        display: block;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 0 12px 0;
+    }
+
+    h3 {
+        display: block;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 12px 0;
+    }
+
+    .pseudo-h1 {
+        display: block;
+        color: #003C64;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0 0 12px 0;
+    }
+
+    .pseudo-h2 {
+        display:block;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 0 12px 0;
+    }
+
+    .pseudo-h3 {
+        display: block;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 12px 0;
+    }
+
+
+    .margin-top-2xlarge {
+        margin-top: 32px;
+    }
+
+    .margin-top-large {
+        margin-top: 20px;
+    }
+
+    .margin-top {
+        margin-top: 16px;
+    }
+
+    .margin-top-xsmall {
+        margin-top: 8px;
+    }
+
+    .margin-bottom {
+        margin-bottom: 16px;
+    }
+
+    .figure-cell {
+        text-align: right;
+        padding: 0 4px;
+        vertical-align: bottom;
+        height: 1px; 
+    }
+
+    .figure-row-four-column .figure-cell {
+        width: 88px;
+    }
+
+    .figure-row-two-column .figure-cell {
+        width: 184px;
+    }
+
+    .figure {
+        text-align: right;
+        border-collapse: separate;
+        border-spacing: 2px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .figure td {
+        padding: 0;
+    }
+
+    .figure.no-brackets td {
+        padding-right: 5px;
+    }
+
+    .strong {
+        font-weight: bold;
+    }
+
+    .subtotal {
+        font-weight: bold;
+    }
+
+    .subtotal.figure {
+        border-top: 1px solid;
+    }
+
+    .summation-line.figure {
+        border-top: 1px solid;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grand-total {
+        font-weight: bold;
+    }
+
+    .grand-total.figure {
+        border-top: 1px solid;
+        border-bottom: 3px double;
+    }
+
+    .grand-total.single-bottom-border.figure {
+        border-bottom: 1px solid;
+        margin-bottom: 1px;
+    }
+    
+    .highlight {
+        background: #F3F3F4;
+    }
+
+    /* Numbers are right-aligned, so padding would reduce available space for no reason on those cells */
+    .label.figure-indent td {
+        padding-left: 16px;
+    }
+
+    .note-reference {
+        text-align: center;
+        width: 64px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .label-cell {
+        padding: 0;
+        vertical-align: bottom;
+        min-width: 184px;
+    }
+
+    .label {
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 2px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+
+    .table-row .figure-cell:not(:first-child) {
+        width: 140px;
+    }
+
+    .table-row.four-or-less-columns .figure-cell:not(:first-child) {
+        width: 170px;
+    }
+
+
+    .disclosure-spacing {
+        margin-bottom: 16px;
+    }
+
+    .disclosure-spacing:last-child {
+        margin-bottom: 0;
+    }
+
+    .disclosure-indent {
+        padding-left: 24px;
+    }
+
+    .disclosure-indent-table {
+        width: 100%;
+        max-width: 97%;
+    }
+
+    .inline-note p{
+        display: inline;
+    }
+
+
+    .signature-column {
+        width: 50%;
+        padding-right: 16px;
+    }
+
+    .signature-written:not(.no-data-placeholder) {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+
+    .two-column-table tr td:first-child {
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .separator {
+        height: 16px;
+    }
+
+    .no-data-placeholder {
+        display: block;
+        background: #F2F8FC;
+        border: 1px dashed #0078C8;
+        border-radius: 3px;
+        padding: 8px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        color: #737883;
+    }
+
+    @media screen {
+        .horizontal-line {
+            width: 100%;
+            height: 1px;
+            background-color: #CCCED2;
+            margin: 24px 0;
+        }
+
+        .table-of-contents {
+            display: none;
+        }
+
+        header {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
+
+        .content-locator {
+            display: none;
+        }
+
+        .active-area {
+            border: 3px solid transparent;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .active-area:hover {
+            border: 3px solid #0078C8;
+            cursor: pointer;
+            background-color: #F6F7F7;
+        }
+
+        .active-area:hover::after {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background-color: #FFF;
+            border: 1px solid #CCCED2;
+            border-radius: 4px;
+            color: #0078C8;
+            font-weight: bold;
+            padding: 8px 12px;
+            content: "Edit section";
+            font-size: 12px;
+        }
+
+        .active-area.accounts-locked:hover::after {
+            content: "View section";
+        }
+    }
+</style>
+        <style type="text/css">
+    .rich-text-bold {
+        font-weight: bold;
+    }
+
+    .rich-text-italic {
+        font-style: italic;
+    }
+
+    .rich-text-underline {
+        text-decoration: underline;
+    }
+
+    .rich-text-paragraph,
+    .rich-text-ol,
+    .rich-text-ul {
+        margin: 0;
+    }
+
+        .rich-text-paragraph:first-of-type {
+            margin-top: 8px;
+        }
+
+    .rich-text-table {
+        width: fit-content;
+        margin-bottom: 8px;
+    }
+
+    .rich-text-table-cell {
+        border: 1px solid #CCCED2;
+        padding: 6px 8px;
+        min-width: 75px;
+        text-align: start;
+        vertical-align: top;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .rich-text-table-cell-header {
+        background-color: #E6E7E9;
+        font-weight: normal;
+    }
+</style>
+        <style type="text/css">@page {
+        size: A4;
+        margin: 64px;
+        mso-header-margin: 32px;
+        mso-footer-margin: 32px;
+    }
+
+    @media print {
+        body {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+
+        h3 {
+            font-size: 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .pseudo-h1 {
+            font-size: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        .pseudo-h2 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+
+        .pseudo-h3 {
+            font-size: 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .cover-heading {
+            font-size: 32px;
+            margin: 0 0 8px 0;
+        }
+
+        header {
+            color: #003C64;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        .cover {
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 225px;
+        }
+
+        .figure {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .page-count {
+            text-align: right;
+        }
+
+        .grand-total.figure {
+            border-bottom: 1.5px double;
+        }
+
+        .page-break-avoid * {
+            page-break-before: avoid;
+            page-break-after: avoid;
+        }
+
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        .page-break-after {
+            page-break-after: always;
+        }
+
+        .no-data-placeholder {
+            margin-top: 16px;
+            margin-right: 20px;
+            border: none;
+            border-bottom: 1px solid #000;
+            background: none;
+            padding: 0;
+            visibility: hidden;
+        }
+
+        
+        .disclosure-spacing > h3 {
+            margin-top: 12px;
+            page-break-after: avoid;
+        }
+
+        .disclosure-spacing > table {
+            page-break-before: avoid;
+        }
+
+        .disclosure-spacing table tr.table-row:first-of-type {
+            page-break-after: avoid;
+        }
+
+        .disclosure-spacing table tr.table-row:nth-of-type(2) {
+            page-break-before: avoid;
+            page-break-after: avoid;
+        }
+
+        .table-row .figure-cell:not(:first-child) {
+            width: 85px;
+        }
+
+        .table-row.four-or-less-columns .figure-cell:not(:first-child) {
+            width: 120px;
+        }
+
+        .figure.no-brackets td {
+            padding-right: 4px;
+        }
+    }
+</style>
+        
+</head>
+    <body>
+        <div style="display:none"><ix:header><ix:hidden>
+        <ix:nonNumeric name="bus:StartDateForPeriodCoveredByReport" contextRef="FY_START_20251027">2025-10-27</ix:nonNumeric>
+        <ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="FY_END_20260531">2026-05-31</ix:nonNumeric>
+        <ix:nonNumeric name="bus:BalanceSheetDate" contextRef="FY_END_20260531">2026-05-31</ix:nonNumeric>
+        <ix:nonNumeric name="bus:EntityTradingStatus" contextRef="FY_20260531"></ix:nonNumeric>
+        <ix:nonNumeric name="bus:EntityDormantTruefalse" contextRef="FY_20260531">false</ix:nonNumeric>
+        <ix:nonNumeric name="bus:UKCompaniesHouseRegisteredNumber" contextRef="FY_20260531">16812167</ix:nonNumeric>
+        <ix:nonNumeric name="bus:EntityCurrentLegalOrRegisteredName" contextRef="FY_20260531">D-Luxe Fitouts Ltd</ix:nonNumeric>
+        <ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="FY_ACCOUNTING_STANDARD"></ix:nonNumeric>
+        <ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="FY_ACCOUNTS_STATUS"></ix:nonNumeric>
+        <ix:nonNumeric name="bus:AccountsType" contextRef="FY_ACCOUNTS_TYPE"></ix:nonNumeric><ix:nonNumeric name="bus:SICCodeRecordedUKCompaniesHouse1" contextRef="FY_20260531">43999</ix:nonNumeric><ix:nonNumeric name="bus:DescriptionPrincipalActivities" contextRef="FY_20260531">Other specialised construction activities not elsewhere classified</ix:nonNumeric>
+        <ix:nonNumeric name="bus:LegalFormEntity" contextRef="FY_LEGALFORM"></ix:nonNumeric></ix:hidden>
+
+        <ix:references><link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2024-01-01/FRS-102-2024-01-01.xsd" xlink:type="simple"></link:schemaRef></ix:references>
+
+        <ix:resources><xbrli:unit id="GBP"><xbrli:measure>iso4217:GBP</xbrli:measure></xbrli:unit>
+            <xbrli:unit id="pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+            <xbrli:context id="FY_START_20251027"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2025-10-27</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_ACCOUNTING_STANDARD"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:Micro-entities</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_ACCOUNTS_STATUS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_ACCOUNTS_TYPE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:FullAccounts</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_FINANCIALINSTRUMENTDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_FINANCIALINSTRUMENTDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_LANDBUILDINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LandBuildings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_FURNITUREFITTINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OFFICEEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OfficeEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_VEHICLES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_PLANTMACHINERY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OTHERPROPERTYPLANTEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OtherPropertyPlantEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_LANDBUILDINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LandBuildings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_PLANTMACHINERY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_VEHICLES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_FURNITUREFITTINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OFFICEEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OfficeEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260531_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OTHERPROPERTYPLANTEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OtherPropertyPlantEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260531_CORE_PPEOWNERSHIPDIMENSION_CORE_RIGHTOFUSEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:Right-of-useAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260531_CORE_PPEOWNERSHIPDIMENSION_CORE_RIGHTOFUSEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:Right-of-useAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_GOODWILL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:Goodwill</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_PATENTSTRADEMARKSLICENCESCONCESSIONSSIMILAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:PatentsTrademarksLicencesConcessionsSimilar</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_DEVELOPMENTCOSTSCAPITALISEDDEVELOPMENTEXPENDITURE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:DevelopmentCostsCapitalisedDevelopmentExpenditure</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_OTHERRESIDUALINTANGIBLEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_GOODWILL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:Goodwill</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_DEVELOPMENTCOSTSCAPITALISEDDEVELOPMENTEXPENDITURE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:DevelopmentCostsCapitalisedDevelopmentExpenditure</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_PATENTSTRADEMARKSLICENCESCONCESSIONSSIMILAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:PatentsTrademarksLicencesConcessionsSimilar</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260531_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_OTHERRESIDUALINTANGIBLEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-05-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_DPL_EXPENSETYPEDIMENSION_DPL_COSTSALES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:CostSales</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_DPL_EXPENSETYPEDIMENSION_DPL_ADMINISTRATIVEEXPENSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:AdministrativeExpenses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260531_DPL_EXPENSETYPEDIMENSION_DPL_DISTRIBUTIONCOSTS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:DistributionCosts</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_DIRECTORS_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_DIRECTORS_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_DIRECTORS_3"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_DIRECTORS_4"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director4</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_LEGALFORM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16812167</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-10-27</xbrli:startDate>
+            <xbrli:endDate>2026-05-31</xbrli:endDate></xbrli:period></xbrli:context></ix:resources></ix:header></div>
+        <div><div class="section cover page-break-after"><div  ><div><div class="cover-heading">D-Luxe Fitouts Ltd</div>
+        <div class="pseudo-h2">Unaudited Financial Statements<br />
+            for the period ended 31 May 2026</div><div><div>
+                    Company registration number <ix:nonNumeric name="bus:UKCompaniesHouseRegisteredNumber" contextRef="FY_20260531">16812167</ix:nonNumeric></div><div class="country-of-registration">(England and Wales)</div></div></div></div></div><div class="horizontal-line"></div><div class="section page-break-before"><div  ><h1>Company Information</h1><div class="pseudo-h2">For the period 27 October 2025 to 31 May 2026</div><table class="two-column-table"><tr><td>Directors</td>
+            <td><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_1">J Duffin</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_2">Mrs C Duffin</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_3">S Duffin</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_4">Mrs A Duffin</ix:nonNumeric></td></tr></table>
+    
+    <br class="top-margin" />
+<table class="two-column-table"><tr><td>Registered office</td>
+        <td><ix:nonNumeric name="bus:AddressLine1" contextRef="FY_20260531">8 Spur Road</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:AddressLine2" contextRef="FY_20260531">Cosham</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:PrincipalLocation-CityOrTown" contextRef="FY_20260531">Portsmouth</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:PostalCodeZip" contextRef="FY_20260531">PO6 3EB</ix:nonNumeric></td></tr></table>
+    <br class="top-margin" />
+    <table class="two-column-table"><tr><td>
+                Registered number
+            </td>
+            <td>16812167</td></tr></table>
+    <br class="top-margin" />
+    <table class="two-column-table"><tr><td>Accountant</td>
+            <td>KSL Accountants &amp; Business Advisors</td></tr><tr><td></td>
+                <td>8 Spur Road</td></tr><tr><td></td>
+                <td>Cosham</td></tr><tr><td></td>
+                <td>Portsmouth</td></tr><tr><td></td>
+                <td>Hampshire</td></tr><tr><td></td>
+                <td>PO6 3EB</td></tr></table></div></div><div class="horizontal-line"></div><div class="section page-break-before page-break-before"><div  ><h1>Statement of Financial Position</h1><div class="pseudo-h2">As at 31 May 2026</div><div class="tabular-report"><table><tr class="figure-row-four-column"><th></th>
+            
+            <th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td></td></tr></table></th>
+            <th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td>2026</td></tr></table></th></tr>
+        <tr class="figure-row-four-column"><th></th><th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th>
+            <th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th></tr>
+            
+            
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label"><tr><td>Current assets</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260531" name="core:CurrentAssets" unitRef="GBP" format="ixt:numcommadot" decimals="0">25,970</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr>
+            
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label"><tr><td>Creditors amounts falling due within one year</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20260531_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">9,582</ix:nonFraction>)</td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr>
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td>Net current assets (liabilities)</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260531" name="core:NetCurrentAssetsLiabilities" unitRef="GBP" format="ixt:numcommadot" decimals="0">16,388</ix:nonFraction></td></tr></table></td></tr>
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td>Total assets less current liabilities</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260531" name="core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" format="ixt:numcommadot" decimals="0">16,388</ix:nonFraction></td></tr></table></td></tr>
+            
+            
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label"><tr><td>Accruals and deferred income</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20260531" name="core:AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal" unitRef="GBP" format="ixt:numcommadot" decimals="0">1,020</ix:nonFraction>)</td></tr></table></td></tr>
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label grand-total single-bottom-border"><tr><td>Net assets (liabilities)</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure grand-total single-bottom-border no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260531" name="core:NetAssetsLiabilities" unitRef="GBP" format="ixt:numcommadot" decimals="0">15,368</ix:nonFraction></td></tr></table></td></tr>
+            <tr class="figure-row-four-column"><td class="label-cell"><table class="label grand-total"><tr><td>Capital and reserves</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure grand-total no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260531" name="core:Equity" unitRef="GBP" format="ixt:numcommadot" decimals="0">15,368</ix:nonFraction></td></tr></table></td></tr></table></div></div></div>
+        <div class="section margin-top"><div  ><h1>Notes to the Financial Statements</h1>
+<div class="disclosure-spacing"><h3>1. Employees</h3>The average number of employees during the year was
+<ix:nonFraction contextRef="FY_20260531" name="core:AverageNumberEmployeesDuringPeriod" unitRef="pure" format="ixt:numcommadot" decimals="0">4</ix:nonFraction><span>.</span></div>
+</div></div>
+<div class="section margin-top-2xlarge"><div ><div class="page-break-avoid">
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies" contextRef="FY_20260531">The company is a private company limited by shares and registered in England and Wales. It was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric></div>
+
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit" contextRef="FY_20260531">The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.</ix:nonNumeric></div>
+
+
+    
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct" contextRef="FY_20260531">The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of financial statements.</ix:nonNumeric></div>
+
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime" contextRef="FY_20260531">These financial statements have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.</ix:nonNumeric></div>
+</div></div></div>
+        <div class="section margin-top-2xlarge page-break-avoid"><div  ><p>
+        The financial statements were approved and authorised for issue by the Board of Directors on <ix:nonNumeric name="core:DateAuthorisationFinancialStatementsForIssue" contextRef="FY_END_20260531" format="ixt2015:datedaymonthyearen">28 July 2026</ix:nonNumeric> and are signed on its behalf by:
+    </p>
+    <table><tbody><tr><td class="signature-column"><div><div class="signature-written margin-top-xsmall">J Duffin</div>
+    <div class="margin-top-xsmall"><div><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_1">J Duffin</ix:nonNumeric>
+            <ix:nonNumeric name="core:DirectorSigningFinancialStatements" contextRef="FY_DIRECTORS_1"></ix:nonNumeric></div>
+        <div>Director</div></div></div></td>
+                <td class="signature-column"><div><div class="signature-written margin-top-xsmall">S Duffin</div>
+    <div class="margin-top-xsmall"><div><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_3">S Duffin</ix:nonNumeric>
+            <ix:nonNumeric name="core:DirectorSigningFinancialStatements" contextRef="FY_DIRECTORS_3"></ix:nonNumeric></div>
+        <div>Director</div></div></div></td></tr></tbody></table><p class="margin-top strong">
+            Company registration number
+16812167</p></div></div></div>
+        </body>
+</html>

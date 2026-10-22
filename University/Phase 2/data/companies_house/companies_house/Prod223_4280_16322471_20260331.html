@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html
+xmlns='http://www.w3.org/1999/xhtml'
+xmlns:iso4217='http://www.xbrl.org/2003/iso4217'
+xmlns:ix='http://www.xbrl.org/2008/inlineXBRL'
+xmlns:link='http://www.xbrl.org/2003/linkbase'
+xmlns:xbrli='http://www.xbrl.org/2003/instance'
+xmlns:xlink='http://www.w3.org/1999/xlink'
+xmlns:ixt='http://www.xbrl.org/inlineXBRL/transformation/2010-04-20'
+xmlns:ixt2='http://www.xbrl.org/inlineXBRL/transformation/2011-07-31'
+xmlns:uk-countries = "http://xbrl.frc.org.uk/cd/2025-01-01/countries"
+xmlns:uk-curr = "http://xbrl.frc.org.uk/cd/2025-01-01/currencies"
+xmlns:uk-lang = "http://xbrl.frc.org.uk/cd/2025-01-01/languages"
+xmlns:uk-bus = "http://xbrl.frc.org.uk/cd/2025-01-01/business"
+xmlns:uk-common = "http://xbrl.frc.org.uk/general/2025-01-01/common"
+xmlns:uk-accrep = "http://xbrl.frc.org.uk/reports/2025-01-01/accrep"
+xmlns:uk-aurep = "http://xbrl.frc.org.uk/reports/2025-01-01/aurep"
+xmlns:uk-direp = "http://xbrl.frc.org.uk/reports/2025-01-01/direp"
+xmlns:uk-core = "http://xbrl.frc.org.uk/fr/2025-01-01/core"
+xmlns:dpl = "http://xbrl.frc.org.uk/dpl/2025-01-01"
+xmlns:xbrldi='http://xbrl.org/2006/xbrldi'>
+<head>
+<meta content='application/xhtml+xml; charset=UTF-8' http-equiv='Content-Type' />
+<title>TM Assessors Ltd  iXBRL</title>
+<style type='text/css'>
+td {   text-align: left  }
+td.rowName  {  text-align: left  }
+td.majorTotal  {   border-top-style: double;  border-bottom-style: double  }
+td.total {  border-top: thin solid black;  border-bottom-style: double  }
+td.minorTotal {  border-top: thin solid black; border-bottom: thin solid black; }
+td.subtotal  {  border-top: thin solid black;  }
+td.listEnd { border-bottom-style: double  }
+td.section  {  font-size: 200%; text-align: left  }
+td.Admin {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.AudFirmSig {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.BodyText {font-family:Arial; font-size:9pt; text-align:justify; text-decoration:none }
+td.ClientName {font-family:Arial; font-size:12pt; text-align:left; font-weight:Bold;  }
+td.ClientName10 {font-family:Arial; font-size:11pt; text-align:left; font-weight:Bold;  }
+td.ClientNameCover {font-family:Arial; font-size:12pt; text-align:center; font-weight:Bold;  }
+td.ClientNameCover10 {font-family:Arial; font-size:11pt; text-align:center; font-weight:Bold;  }
+td.Column3 {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.Column4 {font-family:Arial; font-size:9pt; text-align:center; text-decoration:none }
+td.Column5 {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.Column6 {font-family:Arial; font-size:9pt; text-align:right; font-weight:Bold;  }
+td.Column7 {font-family:Arial; font-size:9pt; text-align:center; text-decoration:none }
+td.Column8 {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.ContextFigure {font-family:Arial; font-size:10pt; text-align:right; text-decoration:none }
+td.ContextPage {font-family:Arial; font-size:10pt; text-align:left; text-decoration:none }
+td.CoverFirm {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.CoverPage {font-family:Arial; font-size:12pt; text-align:center; font-weight:Bold;  }
+td.CoverRight {font-family:Arial; font-size:9pt; text-align:right; font-weight:Bold;  }
+td.DirStatText {font-family:Arial; font-size:9pt; text-align:justify; text-decoration:none }
+td.Divider {font-family:Arial; font-size:10pt; text-align:center; font-weight:Bold; text-decoration:Underline }
+td.EsignAudLetter {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold; text-decoration:Underline }
+td.Esigning4 {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+td.Esigning4Full {font-family:Arial; font-size:9pt; text-align:justify; text-decoration:none }
+td.EsignLetter {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.EsignsLeft4 {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+td.EsignSoliLetter {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.EsignSoliLetterLeft {font-family:Arial; font-size:8pt; text-align:left; text-decoration:none }
+td.EsignSoliLetterLeft2 {font-family:Arial; font-size:8pt; text-align:left; text-decoration:none }
+td.Figure1 {font-family:Arial; font-size:9pt; text-align:right; font-weight:Bold;  }
+td.Figure2 {font-family:Arial; font-size:9pt; text-align:right; text-decoration:none }
+td.Footer {font-family:Arial; font-size:9pt; text-align:right; font-weight:Bold;  }
+td.FooterText {font-family:Arial; font-size:8pt; text-align:center; text-decoration:none }
+td.FormatError {font-family:Arial; font-size:8pt; text-align:left; font-weight:Bold; text-decoration:Underline }
+td.FormatErrorGr {font-family:Arial; font-size:9pt; text-align:justify; font-weight:Bold;  }
+td.FormatErrorLeft {font-family:Arial; font-size:8pt; text-align:left; font-weight:Bold;  }
+td.FormatErrorNoti {font-family:Arial; font-size:8pt; text-align:justify; font-weight:Bold;  }
+td.Full3 {font-family:Arial; font-size:9pt; text-align:justify; text-decoration:none }
+td.Full4Reg {font-family:Arial; font-size:9pt; text-align:justify; text-decoration:none }
+td.Guarantee {font-family:Arial; font-size:8pt; text-align:center; font-weight:Bold;  }
+td.Guarantee1 {font-family:Arial; font-size:8pt; text-align:left; font-weight:Bold;  }
+td.Heading3 {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.Heading4 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Heading4Line {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Heading8 {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold; font-style:Italic;  }
+td.HeadingNoti4 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.HeadingNoti5 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.HeadingNoti6 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Left {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+td.Left2 {font-family:Arial; font-size:9pt; text-align:justify; text-decoration:none }
+td.Left2B {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Left2Reg {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+td.Left3 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Left3Line {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Left4 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Left4Line {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Left4Reg {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+td.LeftFull {font-family:Arial; font-size:9pt; text-align:justify; font-weight:Bold;  }
+td.LeftFullLine {font-family:Arial; font-size:9pt; text-align:justify; font-weight:Bold;  }
+td.LeftRegError {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.Mid {font-family:Arial; font-size:9pt; text-align:center; text-decoration:none }
+td.Mid2B {font-family:Arial; font-size:9pt; text-align:center; font-weight:Bold;  }
+td.NameESigsLeft3 {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+td.NameSigs2 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.NameSigsLeft3 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.NameSigsLeft4 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.NameSigsLeftFull {font-family:Arial; font-size:9pt; text-align:justify; font-weight:Bold;  }
+td.NamesSigs {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.NoteHeading {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.PageName {font-family:Arial; font-size:14pt; text-align:left; font-weight:Bold;  }
+td.Supplement {font-family:Arial; font-size:11pt; text-align:left; font-weight:Bold;  }
+td.Supplementary2 {font-family:Arial; font-size:9pt; text-align:left; font-weight:Bold;  }
+td.YearEnd {font-family:Arial; font-size:9pt; text-align:left; text-decoration:none }
+</style>
+</head>
+<body>
+<div style='display:none'>
+<ix:header>
+<ix:hidden>
+<ix:nonNumeric contextRef='Curr_Period' name='uk-bus:NameProductionSoftware'>BrightAccountsProduction v1.0.0</ix:nonNumeric>
+<ix:nonNumeric contextRef='Curr_Period' name='uk-bus:VersionProductionSoftware'>v1.0.0</ix:nonNumeric>
+<ix:nonNumeric contextRef='Comp_End' name='uk-bus:StartDateForPeriodCoveredByReport'>2025-04-01</ix:nonNumeric>
+<ix:nonNumeric contextRef='Curr_Period' name='uk-bus:EntityDormantTruefalse' format='ixt2:booleanfalse'>The company was not dormant during the period</ix:nonNumeric>
+<ix:nonNumeric contextRef='Curr_Period' name='uk-bus:EntityTradingStatus' format='ixt2:nocontent'>The company was trading for the entire period</ix:nonNumeric>
+<ix:nonNumeric contextRef='uk-bus_AuditExempt-NoAccountantsReport_Hidden' name='uk-bus:AccountsStatusAuditedOrUnaudited' format='ixt2:nocontent'>Unaudited Accounts</ix:nonNumeric>
+<ix:nonNumeric contextRef='uk-bus_AccountingStandards_Hidden' name='uk-bus:AccountingStandardsApplied' format='ixt2:nocontent'>FRS 105 Accounts</ix:nonNumeric>
+<ix:nonNumeric contextRef='Director_1' name='uk-direp:DirectorSigningDirectorsReport'/>
+<ix:nonNumeric contextRef='Director_1' name='uk-core:DirectorSigningFinancialStatements'/>
+<ix:nonNumeric contextRef='uk-bus_PrivateLimitedCompanyLtd_Hidden' name='uk-bus:LegalFormEntity' format='ixt2:nocontent'></ix:nonNumeric>
+<ix:nonNumeric contextRef='Curr_Period' name='uk-bus:DescriptionPrincipalActivities'>Motor vehicle insurance claim assessors</ix:nonNumeric>
+<ix:nonNumeric contextRef='Curr_End' name='uk-aurep:DateAuditorsReport' format='ixt:datelonguk'>5 August 2026</ix:nonNumeric>
+<ix:nonNumeric contextRef='PrincipalCurrency_Hidden' name='uk-bus:PrincipalCurrencyUsedInBusinessReport' format='ixt2:nocontent'></ix:nonNumeric>
+<ix:nonFraction contextRef='Curr_Period' decimals='0' name='uk-core:AverageNumberEmployeesDuringPeriod' scale='0' unitRef='Pure' format='ixt:numcommadot'>0</ix:nonFraction>
+</ix:hidden>
+<ix:references>
+<link:schemaRef xlink:type="simple" xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd"/> 
+</ix:references>
+<ix:resources>
+<xbrli:context id="Curr_End">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2026-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="Comp_End">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2025-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="Curr_Period">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="uk-bus_PrivateLimitedCompanyLtd_Hidden">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-bus:LegalFormEntityDimension">uk-bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id='PrincipalCurrency_Hidden'>
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension='uk-curr:CurrenciesDimension'>uk-curr:PoundSterling</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="uk-bus_AbridgedAccounts_1">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-bus:AccountsTypeDimension">uk-bus:AbridgedAccounts</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="uk-core_CapitalReserve_2">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-core:EquityClassesDimension">uk-core:CapitalReserve</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2026-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="ParentLargestGroupCountry">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-countries:CountriesDimension"></xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="Director_1">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="uk-bus_AuditExempt-NoAccountantsReport_Hidden">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-bus:AccountsStatusDimension">uk-bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="uk-bus_AccountingStandards_Hidden">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16322471</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="uk-bus:AccountingStandardsDimension">uk-bus:Micro-entities</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2025-04-01</xbrli:startDate>
+<xbrli:endDate>2026-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<!--Unit Section-->
+<xbrli:unit id='Pure'>
+<xbrli:measure>xbrli:pure</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id='GBP'>
+<xbrli:measure>iso4217:GBP</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id="Shares">
+<xbrli:measure>xbrli:shares</xbrli:measure>
+</xbrli:unit>
+</ix:resources>
+</ix:header>
+</div>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td> </td>
+</tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr><td>&#160;</td></tr>
+<tr><td>&#160;</td></tr>
+<tr><td>&#160;</td></tr>
+<tr>
+<td  class ='ClientNameCover'   colspan ='100' style="width:78%"><b><ix:nonNumeric contextRef='Curr_Period' name='uk-bus:EntityCurrentLegalOrRegisteredName'>TM Assessors Ltd</ix:nonNumeric></b></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr><td>&#160;</td></tr>
+<tr>
+<td  class ='CoverPage'   colspan ='100' style="width:78%"><b><ix:nonNumeric contextRef='uk-bus_AbridgedAccounts_1' name='uk-bus:AccountsType' format='ixt2:nocontent'>Unaudited Financial Statements</ix:nonNumeric></b></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr><td>&#160;</td></tr>
+<tr>
+<td  class ='CoverPage'   colspan ='100' style="width:78%"><b>for the financial year ended <ix:nonNumeric contextRef='Curr_End' name='uk-bus:EndDateForPeriodCoveredByReport' format='ixt:datelonguk'>31 March 2026</ix:nonNumeric></b></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td  class ='Footer'  style="width:78%"><b></b></td>
+</tr>
+<tr><td><br/></td></tr>
+<tr><td><br/></td></tr>
+<tr><td><br/></td></tr>
+</table>
+<table style='border-collapse: collapse; page-break-before: always' width='650'>
+<tr>
+<td style="width:69%"></td>
+<td  class ='Figure2'  style="width:10%"></td>
+</tr>
+<tr>
+<td  class ='ClientName'   colspan ='100' style="width:69%"><b>TM Assessors Ltd</b></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td  class ='Guarantee1'   colspan ='100' style="width:69%"><b>Company Registration Number: <ix:nonNumeric contextRef='Curr_Period' name='uk-bus:UKCompaniesHouseRegisteredNumber'>16322471</ix:nonNumeric></b></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td  class ='PageName'   colspan ='100' style="width:69%"><b>BALANCE SHEET</b></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td  class ='YearEnd'   colspan ='100' style="width:69%">as at <ix:nonNumeric contextRef='Curr_End' name='uk-bus:BalanceSheetDate' format='ixt:datelonguk'>31 March 2026</ix:nonNumeric></td>
+</tr></table>
+<table style='border-collapse: collapse' width='650'>
+<tr><td><br/></td></tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td>&#160; </td>
+<td style="width:41%">&#160; </td>
+<td  class ='Figure1'  style="width:37%"><b>2026</b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td  class ='Figure1'  style="width:37%"><b>&#163;</b></td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td  > </td>
+<td abbr='IntanFA_TanFA'  class ='Left HyperLinkNomGroup'  style="width:41%">Fixed Assets </td>
+<td abbr='IntanFA_TanFA'  class ='Figure1 HyperLinkNomGroup'  style="width:37%"><b><ix:nonFraction contextRef='Curr_End' decimals='0' name='uk-core:FixedAssets' scale='0' unitRef='GBP' format='ixt:numcommadot'>2,679</ix:nonFraction></b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td class='Figure1' style="width:37%">&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Left'  style="width:41%">Current assets </td>
+<td  class ='Figure1'  style="width:37%"><b><ix:nonFraction contextRef='Curr_End' decimals='0' name='uk-core:CurrentAssets' scale='0' unitRef='GBP' format='ixt:numcommadot'>40,509</ix:nonFraction></b></td>
+</tr>
+<tr>
+<td  > </td>
+<td abbr='PrepaymentsAccInc'  class ='Left HyperLinkNomGroup'  style="width:41%">Prepayments and accrued income </td>
+<td abbr='PrepaymentsAccInc'  class ='Figure1 HyperLinkNomGroup'  style="width:37%"><b>1,125</b></td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Left'  style="width:41%">Creditors: amounts falling due within one year </td>
+<td  class ='Figure1'  style="width:37%"><b>(19,221)</b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td class='Figure1' style="width:37%">&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Heading4'  style="width:41%"><b>Net Current Assets</b></td>
+<td  class ='Figure1'  style="width:37%"><b><ix:nonFraction contextRef='Curr_End' decimals='0' name='uk-core:NetCurrentAssetsLiabilities' scale='0' unitRef='GBP' format='ixt:numcommadot'>22,413</ix:nonFraction></b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td class='Figure1' style="width:37%">&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Heading4'  style="width:41%"><b>Total Assets less Current Liabilities</b></td>
+<td  class ='Figure1'  style="width:37%"><b>25,092</b></td>
+</tr>
+<tr>
+<td  > </td>
+<td abbr='LTCredFRS105'  class ='Left HyperLinkNomGroup'  style="width:41%">Creditors: amounts falling due after more than one year </td>
+<td abbr='LTCredFRS105'  class ='Figure1 HyperLinkNomGroup'  style="width:37%"><b>(25,000)</b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td class='Figure1' style="width:37%">&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Heading4'  style="width:41%"><b>Net Assets</b></td>
+<td  class ='Figure1'  style="width:37%"><b><ix:nonFraction contextRef='Curr_End' decimals='0' name='uk-core:NetAssetsLiabilities' scale='0' unitRef='GBP' format='ixt:numcommadot'>92</ix:nonFraction></b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td class='Figure1' style="width:37%">&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;</td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td  > </td>
+<td abbr='ShCap_ShPrem_RevRes_OthRes_CapConResFnd_RetPr_RetPrBFwdMvt_SubLn_MinIntBal_SinkFnd'  class ='Heading4 HyperLinkNomGroup'  style="width:41%"><b>Capital and Reserves</b></td>
+<td abbr='ShCap_ShPrem_RevRes_OthRes_CapConResFnd_RetPr_RetPrBFwdMvt_SubLn_MinIntBal_SinkFnd'  class ='Figure1 HyperLinkNomGroup'  style="width:37%"><b><ix:nonFraction contextRef='uk-core_CapitalReserve_2' decimals='0' name='uk-core:Equity' scale='0' unitRef='GBP' format='ixt:numcommadot'>92</ix:nonFraction></b></td>
+</tr>
+<tr>
+<td  > </td>
+<td style="width:41%">&#160; </td>
+<td class='Figure1' style="width:37%">&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;</td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td  class ='Heading4'  style="width:41%"><b>Notes to the Financial statements</b></td>
+</tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td style="width:5%">&#160; </td>
+<td style="width:73%">&#160; </td>
+</tr>
+<tr>
+<td  class ='Heading4'  style="width:5%">1.</td>
+<td  class ='NoteHeading'  style="width:73%"><b>General Information</b></td>
+</tr>
+<tr>
+<td style="width:5%"></td>
+<td style="width:73%">&#160;</td>
+</tr>
+<tr>
+<td style="width:5%"></td>
+<td abbr='OthNtInf.GenInf.010'  class ='BodyText HyperLinkCompDB'   colspan ='100' style="width:73%">TM Assessors Ltd is a company limited by shares incorporated and registered in the England and Wales. The registered number of the company is 16322471. The registered office of the company is 73 Barton Way, Hassocks, West Sussex, BN6 8FR, United Kingdom which is also the principal place of business of the company. The financial statements have been presented in Pound (&#163;) which is also the functional currency of the company.</td>
+</tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td style="width:5%">&#160; </td>
+<td style="width:54%">&#160; </td>
+<td style="width:10%">&#160; </td>
+</tr>
+<tr>
+<td  class ='Heading4'  style="width:5%">2.</td>
+<td  class ='NoteHeading'  style="width:54%"><b>Employees</b></td>
+</tr>
+<tr>
+<td style="width:5%"></td>
+<td style="width:54%">&#160;</td>
+</tr>
+<tr>
+<td style="width:5%"></td>
+<td abbr='OthNtInf.AvgNoEmp.010'  class ='BodyText HyperLinkCompDB'   colspan ='100' style="width:54%">The average monthly number of employees, including director, during the financial year was 2</td>
+</tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td style="width:5%">&#160; </td>
+<td style="width:73%">&#160; </td>
+</tr>
+<tr>
+<td  class ='Heading4'  style="width:5%">3.</td>
+<td  class ='NoteHeading'  style="width:73%"><b>Post-Balance Sheet Events</b></td>
+</tr>
+<tr>
+<td style="width:5%"></td>
+<td style="width:73%">&#160;</td>
+</tr>
+<tr>
+<td style="width:5%"></td>
+<td abbr='OthNtInf.PostBalShEv.020'  class ='BodyText HyperLinkCompDB'   colspan ='100' style="width:73%">There have been no significant events affecting the company since the financial year-end.</td>
+</tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td>&#160; </td>
+<td style="width:41%">&#160; </td>
+<td style="width:36%">&#160; </td>
+</tr>
+<tr>
+<td></td>
+<td  class ='BodyText'   colspan ='100' style="width:41%"><ix:nonNumeric contextRef='Curr_Period' name='uk-direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies'>For the financial year ended 31 March 2026 the company was entitled to exemption from audit under section 477 of the Companies Act 2006.</ix:nonNumeric></td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td  class ='BodyText'   colspan ='100' style="width:41%"><ix:nonNumeric contextRef='Curr_Period' name='uk-direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit'>The director confirms that the members have not required the company to obtain an audit of its financial statements for the financial year in question in accordance with section 476 of the Companies Act 2006.</ix:nonNumeric></td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td  class ='BodyText'   colspan ='100' style="width:41%"><ix:nonNumeric contextRef='Curr_Period' name='uk-direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct'>The director acknowledges his responsibilities for ensuring that the company keeps accounting records which comply with section 386 and for preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of the financial year and of its profit and loss for the financial year in accordance with the requirements of sections 394 and 395 and which otherwise comply with the requirements of the Companies Act 2006 relating to financial statements, so far as applicable to the company.</ix:nonNumeric></td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td  class ='BodyText'   colspan ='100' style="width:41%"><ix:nonNumeric contextRef='Curr_Period' name='uk-direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime'>These financial statements have been prepared in accordance with the provisions available to micro-entities in Part 15 of the Companies Act 2006 and delivered in accordance with the provisions applicable to companies subject to the small companies&#39; regime.</ix:nonNumeric></td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td  class ='BodyText'   colspan ='100' style="width:41%">The company has taken advantage of the exemption under section 444 not to file the Abridged Profit and Loss Account.</td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td  class ='Heading4'  style="width:41%"><b>Approved by the Director on <ix:nonNumeric contextRef='Curr_End' name='uk-core:DateAuthorisationFinancialStatementsForIssue' format='ixt:datelonguk'>5 August 2026</ix:nonNumeric> and signed by:</b></td>
+</tr>
+<tr>
+<td></td>
+<td style="width:41%">&#160;</td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Esigning4'  style="width:41%">&#160; </td>
+<td  class ='Esigning4'  style="width:36%">&#160; </td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='Heading4Line'  style="width:41%"><b>________________________________</b></td>
+<td  class ='Heading4Line'  style="width:36%">&#160; </td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='NamesSigs'  style="width:41%"><b><ix:nonNumeric contextRef='Director_1' name='uk-bus:NameEntityOfficer'>Mr Todd Mitchell</ix:nonNumeric></b></td>
+<td  class ='NamesSigs'  style="width:36%">&#160; </td>
+</tr>
+<tr>
+<td  > </td>
+<td  class ='NamesSigs'  style="width:41%"><b>Director</b></td>
+<td  class ='NamesSigs'  style="width:36%">&#160; </td>
+</tr>
+</table>
+<table style='border-collapse: collapse' width='650'>
+<tr>
+<td style="width:37%"></td>
+<td style="width:5%"></td>
+<td style="width:18%"></td>
+<td  class ='Figure1'  style="width:19%"><b></b></td>
+</tr>
+<tr><td><br/></td></tr>
+<tr><td><br/></td></tr>
+<tr><td><br/></td></tr>
+</table>
+</body></html>

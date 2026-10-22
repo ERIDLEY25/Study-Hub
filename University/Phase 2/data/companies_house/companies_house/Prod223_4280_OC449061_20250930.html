@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ix="http://www.xbrl.org/2013/inlineXBRL"
+      xmlns:link="http://www.xbrl.org/2003/linkbase"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+      xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31"
+      xmlns:uk-core="http://xbrl.frc.org.uk/fr/2023-01-01/core"
+      xmlns:uk-bus="http://xbrl.frc.org.uk/cd/2023-01-01/business"
+      xmlns:uk-direp="http://xbrl.frc.org.uk/reports/2023-01-01/direp">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Micro-entity Accounts - ECHOWAVE MEDIA LLP</title>
+  <style type="text/css">body{font-family:"Times New Roman",serif;padding:20px;color:#333}table{width:100%;border-collapse:collapse;margin-top:20px}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}.num{text-align:right}.bold{font-weight:bold}</style>
+</head>
+<body>
+<div style="display:none">
+<ix:header>
+  <!-- iXBRL 1.1 requires this child order: hidden, then references, then resources -->
+  <ix:hidden>
+    <!-- Mandatory company-data tags CH expects on every accounts filing -->
+    <ix:nonNumeric contextRef="CY"   name="uk-bus:NameProductionSoftware">n8n Custom Filing</ix:nonNumeric>
+    <!-- These two are INSTANT-type items in the taxonomy -> instant context iCY -->
+    <ix:nonNumeric contextRef="iCY"  name="uk-bus:StartDateForPeriodCoveredByReport">2024-10-01</ix:nonNumeric>
+    <ix:nonNumeric contextRef="iCY"  name="uk-bus:EndDateForPeriodCoveredByReport">2025-09-30</ix:nonNumeric>
+    <ix:nonNumeric contextRef="dcur" name="uk-bus:EntityDormantTruefalse">false</ix:nonNumeric>
+    <!-- CH requires the signing officer flag for the current period (officer-dimension context) -->
+    <ix:nonNumeric contextRef="dOfficer" name="uk-core:DirectorSigningFinancialStatements"></ix:nonNumeric>
+    <!-- Enumerated items: content MUST be empty; the value is the dimension member
+         on the referenced context (dAS/dAT/dST), not text inside the tag. -->
+    <ix:nonNumeric contextRef="dcur" name="uk-bus:EntityTradingStatus"></ix:nonNumeric>
+    <ix:nonNumeric contextRef="dAS"  name="uk-bus:AccountingStandardsApplied"></ix:nonNumeric>
+    <ix:nonNumeric contextRef="dAT"  name="uk-bus:AccountsType"></ix:nonNumeric>
+    <ix:nonNumeric contextRef="dST"  name="uk-bus:AccountsStatusAuditedOrUnaudited"></ix:nonNumeric>
+  </ix:hidden>
+
+  <ix:references>
+    <!-- FIX 1: FRS 105 micro-entities tag using the FRS 102 taxonomy entry point.
+         There is no separate FRS-105 schema (that was the "could not be obtained" error).
+         The micro-entity regime is declared via the AccountingStandards dimension below. -->
+    <link:schemaRef xlink:type="simple" xlink:href="https://xbrl.frc.org.uk/FRS-102/2023-01-01/FRS-102-2023-01-01.xsd"/>
+  </ix:references>
+
+  <ix:resources>
+    <!-- instant, current / prior period end (no dimension) -->
+    <xbrli:context id="iCY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2025-09-30</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="iPY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2024-09-30</xbrli:instant></xbrli:period></xbrli:context>
+
+    <!-- duration, current / prior period -->
+    <xbrli:context id="CY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2025-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="PY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-10-01</xbrli:startDate><xbrli:endDate>2024-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+
+    <!-- duration, entity-level (no segment) used for statements + entity facts -->
+    <xbrli:context id="dcur"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2025-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+
+    <!-- duration + officer segment for the signatory -->
+    <xbrli:context id="dOfficer"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2025-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+
+    <!-- duration + the three CH classification dimensions -->
+    <xbrli:context id="dAS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-bus:AccountingStandardsDimension">uk-bus:Micro-entities</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2025-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="dAT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-bus:AccountsTypeDimension">uk-bus:FullAccounts</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2025-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="dST"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-bus:AccountsStatusDimension">uk-bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2025-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+
+    <!-- FIX 2: creditors are tagged with base concept uk-core:Creditors in a context
+         carrying the maturity dimension, NOT a (non-existent) flat concept name. -->
+    <xbrli:context id="iCY-within"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-core:MaturitiesOrExpirationPeriodsDimension">uk-core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-09-30</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="iPY-within"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-core:MaturitiesOrExpirationPeriodsDimension">uk-core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-09-30</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="iCY-after"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-core:MaturitiesOrExpirationPeriodsDimension">uk-core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-09-30</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="iPY-after"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">OC449061</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="uk-core:MaturitiesOrExpirationPeriodsDimension">uk-core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-09-30</xbrli:instant></xbrli:period></xbrli:context>
+
+    <xbrli:unit id="GBP"><xbrli:measure>iso4217:GBP</xbrli:measure></xbrli:unit>
+    <xbrli:unit id="pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+  </ix:resources>
+</ix:header>
+</div>
+
+
+<h2><ix:nonNumeric contextRef="dcur" name="uk-bus:EntityCurrentLegalOrRegisteredName">ECHOWAVE MEDIA LLP</ix:nonNumeric></h2>
+<h3>Registered Number: <ix:nonNumeric contextRef="dcur" name="uk-bus:UKCompaniesHouseRegisteredNumber">OC449061</ix:nonNumeric></h3>
+<h3>Balance Sheet as at <ix:nonNumeric contextRef="iCY" name="uk-bus:BalanceSheetDate" format="ixt2:datedaymonthyearen">30 September 2025</ix:nonNumeric></h3>
+
+
+<table>
+  <thead><tr><th>Financial Element</th><th class="num">2025 (£)</th><th class="num">2024 (£)</th></tr></thead>
+  <tbody>
+    <tr><td>Fixed Assets</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:FixedAssets" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:FixedAssets" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Current Assets</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:CurrentAssets" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">81</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:CurrentAssets" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Prepayments and accrued income</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:PrepaymentsAccruedIncome" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:PrepaymentsAccruedIncome" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Creditors: amounts falling due within one year</td>
+        <td class="num"><ix:nonFraction contextRef="iCY-within" name="uk-core:Creditors" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY-within" name="uk-core:Creditors" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Net current assets (liabilities)</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:NetCurrentAssetsLiabilities" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">81</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:NetCurrentAssetsLiabilities" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Total assets less current liabilities</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">81</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Creditors: amounts falling due after more than one year</td>
+        <td class="num"><ix:nonFraction contextRef="iCY-after" name="uk-core:Creditors" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY-after" name="uk-core:Creditors" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Provisions for liabilities</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:ProvisionsForLiabilitiesBalanceSheetSubtotal" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:ProvisionsForLiabilitiesBalanceSheetSubtotal" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr><td>Accruals and deferred income</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr class="bold"><td>Total net assets (liabilities)</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:NetAssetsLiabilities" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">81</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:NetAssetsLiabilities" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+    <tr class="bold"><td>Members' funds</td>
+        <td class="num"><ix:nonFraction contextRef="iCY" name="uk-core:Equity" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td>
+        <td class="num"><ix:nonFraction contextRef="iPY" name="uk-core:Equity" unitRef="GBP" decimals="2" format="ixt2:numdotdecimal">0</ix:nonFraction></td></tr>
+  </tbody>
+</table>
+
+<p>Average number of employees during the period:
+   <ix:nonFraction contextRef="CY" name="uk-core:AverageNumberEmployeesDuringPeriod" unitRef="pure" decimals="0" format="ixt2:numdotdecimal">0</ix:nonFraction>
+   (Previous year: <ix:nonFraction contextRef="PY" name="uk-core:AverageNumberEmployeesDuringPeriod" unitRef="pure" decimals="0" format="ixt2:numdotdecimal">0</ix:nonFraction>)</p>
+
+<!-- Required audit-exemption / responsibility statements, tagged (not free text).
+     NOTE: these concepts say "Company"; for an LLP, CH may expect the LLP-specific
+     equivalents. Run the validator – it will name the correct LLP concept if needed. -->
+<p><ix:nonNumeric contextRef="dcur" name="uk-direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">For the year ending 2025-09-30 the LLP was entitled to exemption from audit under section 477 of the Companies Act 2006 (as applied to LLPs) relating to small entities.</ix:nonNumeric></p>
+<p><ix:nonNumeric contextRef="dcur" name="uk-direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">The members have not required the company to obtain an audit of its accounts for the year in question in accordance with section 476 of the Companies Act 2006.</ix:nonNumeric></p>
+<p><ix:nonNumeric contextRef="dcur" name="uk-direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">The Directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.</ix:nonNumeric></p>
+<p><ix:nonNumeric contextRef="dcur" name="uk-direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">These accounts have been prepared in accordance with the micro-entity provisions.</ix:nonNumeric></p>
+
+<p>Approved by the members on
+   <ix:nonNumeric contextRef="iCY" name="uk-core:DateAuthorisationFinancialStatementsForIssue" format="ixt2:datedaymonthyearen">25 July 2026</ix:nonNumeric>
+   and signed on their behalf by:</p>
+<p><ix:nonNumeric contextRef="dOfficer" name="uk-bus:NameEntityOfficer">Eyal Hamelzky</ix:nonNumeric>, Designated Member</p>
+</body>
+</html>

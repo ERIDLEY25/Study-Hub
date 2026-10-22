@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <html
+        version="-//XBRL International//DTD XHTML Inline XBRL 1.1//EN"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+        xmlns:ix="http://www.xbrl.org/2013/inlineXBRL"
+        xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2010-04-20"
+        xmlns:link="http://www.xbrl.org/2003/linkbase"
+        xmlns:xbrli="http://www.xbrl.org/2003/instance"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+        xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31"
+        xmlns:business="http://xbrl.frc.org.uk/cd/2025-01-01/business"
+        xmlns:core="http://xbrl.frc.org.uk/fr/2025-01-01/core"
+        xmlns:countries="http://xbrl.frc.org.uk/cd/2025-01-01/countries"
+        xmlns:direp="http://xbrl.frc.org.uk/reports/2025-01-01/direp"
+        xmlns:ct-CT="http://www.hmrc.gov.uk/schemas/ct/comp/2025-01-01"
+        xmlns:dpl="http://xbrl.frc.org.uk/dpl/2025-01-01"
+        xmlns:dplfrc="http://xbrl.frc.org.uk/fr/2025-01-01/core"
+    >
+        <head>
+            <meta content="application/xhtml+xml; charset=UTF-8;" http-equiv="Content-Type" />
+            <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+            <title>ASEEDA LIMITED</title>
+            <style type="text/css">
+                
+    html {
+        background-color: #444;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    body {
+        width: 8.267in;
+        margin: 10px auto;
+        padding: 0;
+        text-rendering: geometricPrecision;
+
+        color: #3d4148;
+    }
+    a {
+        text-decoration: none;
+        color: #00d;
+    }
+    a:visited {
+        color: #00d;
+    }
+    a:hover {
+        color: #00d;
+        text-decoration: underline;
+    }
+
+    .full-page {
+        background-color: #fff;
+        position: relative;
+        width: calc(100% - 140px);
+
+        /* Includes the minus 0.5inch */
+        height: 11.192in;
+
+        padding: 0 70px;
+        padding-bottom: 0.5in;
+    }
+
+    .break {
+        height: 20px;
+        page-break-after: always;
+    }
+
+    .header {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .company-number {
+        flex-grow: 1;
+        margin-top: 60px;
+
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+
+    .header-line {
+        position: absolute;
+
+        top: 39px;
+
+        width: 435px;
+        height: 1px;
+        /* background-color: #0000001a; */
+    }
+
+    .blue-square {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        height: 40px;
+        width: 145px;
+
+        background-color: #1570ef;
+    }
+
+    .title-section {
+        position: absolute;
+        bottom: 0.5in;
+        left: 70px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        color: #1e2024;
+        font-family: Verdana;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 154%; /* 98.56px */
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+
+        margin: 0;
+        margin-bottom: 12px;
+
+        max-width: 650px;
+    }
+
+    .subtitle {
+        padding: 12px 0 12px 32px;
+
+        font-family: Arial;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 28.6px */
+        letter-spacing: 0.66px;
+        text-transform: capitalize;
+
+        border-left: 5px solid #1570ef;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .header-title {
+        color: #3d4148;
+        font-family: Arial;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 30.8px */
+        letter-spacing: 0.22px;
+
+        margin-top: 80px;
+    }
+
+    .contents-title {
+        position: absolute;
+        bottom: 65px;
+        left: 50px;
+
+        display: block;
+        background-image: url('data:image/png;base64,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');
+        width: 87px;
+        height: 535px;
+    }
+
+    .contents-list {
+        width: 100%;
+        margin-top: 380px;
+
+        color: #3d4148;
+        font-family: Verdana;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 30.8px */
+        letter-spacing: 0.22px;
+
+        text-align: right;
+    }
+
+    .contents-item {
+        display: block;
+        margin-left: auto;
+
+        margin-bottom: 16px;
+
+        width: 452px;
+        height: 31px;
+
+        color: #3d4148;
+    }
+
+    .contents-item:hover {
+        color: #3d4148;
+        text-decoration: none;
+    }
+
+    .contents-text {
+        color: #3d4148;
+    }
+
+    .contents-page {
+        display: inline-block;
+        color: #1570ef;
+
+        margin-left: 8px;
+    }
+
+    .taxd {
+        position: absolute;
+
+        right: 70px;
+        bottom: 80px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+
+        color: #c1c7d1;
+    }
+
+    .taxd.taxd-footer {
+        position: static;
+        right: unset;
+        bottom: unset;
+    }
+
+    .taxd:hover {
+        text-decoration: none;
+    }
+
+    .taxd span {
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.14px;
+        color: #c1c7d1;
+    }
+
+    .logo {
+        display: block;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAQCAYAAABtPJ3XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP+SURBVHgBxVZNbBtFFH5vdjcOSezaciMVpRXmAoITCMS1oXCPy506vfSAVGXDBcHF4UARQsiuCkhwSVA4k/oe0XAFJMoJLqBQtRIiie3GbuN4d+bxzf6ErVFaVarkJ61m5s2bt998+82bZRqxpy/dmZJcYfrA0XlPKdf6QtaHEzlv8KI3vbf1IYc0RuO0U6+L+mrYL4eHUnrYAjfHnb8/zu/QmCwCbMF+PTg4HQTh5IOzTj5qRfeybhO499vXpm7TGCwCfOr93uwRswDJZrhIIjUMYsAkd9DfFGfiWgr+OKbLfqeKpN3dZmmLnqCd9DvzyFtXr1wSLwuW9HBdhN4wQu8A4Kv2Qf+KEL0JKbdS1u2a+bq4o4kV0RIS1+gJG5OuoJl3b524VyadOMGskBTIyS1Y6h3RcyHG7PBvJFwVI+uihzVWzuc2/ud23240Yrnod4puDLaCzRXBSB3tr3vN0vVTfqcSxnNF+LqIuzqI26U0xuZI4mqIa+00Szdnl+8ukZiX7Br7WEwqMEHuaBtC50UUPrspsB62jAm/VUZ/yUbArOSZ1JrKsOdOhFNZFiQBSzGwCmg5YUGAj1/wsnkTMUVVtDfiFeYu8q3aGDtC3CrmFyOwfqcJHCsmDqzAvxKRevLd/efitwGkyE+iCOzyC2LMZVLuOYTMsQm/h/9c/BUIfed521fOhP7n08k/sqDxIgtmGy+9mIwtQzVoejn9Eh5RxzAt7jVK3yTxdpM/4KkFRC+7McAbaUySp4HGV/+JRJIDRj3SpgDHPo2YIjVHj2mWLTQtSKSBZ2MCbGfnAfBiAngJ9K90m6Vt9M/auRSsNRNvyErCJBeBg0ogPdb8mii1AUeBjF5nE7Qiv6EvjDEfwP9dmmRoDh55iYCZRY4lUGGmLc3kZ+dtHU0vAxzuv47LYytPBFhrJ1NjeQ3fHFLwBHJ4GxLZNKTeE+UtYHIT4w1UjStpdDh079OjrQZJXIckzu80SlfVCCjo1h5Oa82MniM2bSnLhEas8+lleWrAvTORCzomY9bBRN4o7yNm9aN122qBxL+PItnN5/+kkasajK6iqQJE01YAgDhrDxrWLytWz7AY3x5M6NNnoRLmGpDFs1YKWGvl0oWMXrf9qKqwaooYq2k/YZpo5nJvdtJLanF8+C4g6VuYTDTLt0XJhVg2sQ0lv7vf4PboJnCoKl7MWkWY1rRQC+NGVDXsZ2XC6adqSGHLIbemmG5a5tO1DtZqCqFddzvNQ3FZs3peiOWDq7nY755xxck98PZjrmbtuYPOJ1O3aAx29PNjQc+0++Ujpo+xQ863e5/xLo3J+H8eXNXT7r2yx0HOzcWMB8oL9GHY77szfWrwAY3R/gW1stn7nm2jxQAAAABJRU5ErkJggg==');
+        width: 44px;
+        height: 16px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 50px;
+        left: 70px;
+        right: 70px;
+        width: calc(100% - 140px);
+        height: 16px;
+    }
+
+    .footer-line {
+        position: absolute;
+        display: block;
+        height: 1px;
+        background-color: #0000001a;
+    }
+
+    .page-number {
+        position: absolute;
+        right: 0;
+
+        color: #98a2b3;
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+
+    .figures-table,
+    .content-table {
+        width: 100%;
+
+        margin-top: 32px;
+
+        border-collapse: collapse;
+    }
+
+    .figures-table *,
+    .content-table * {
+        color: #000;
+        text-align: right;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 16.8px */
+        letter-spacing: 0.12px;
+    }
+
+    th,
+    td {
+        padding: 8px 12px;
+    }
+
+    .grey-row {
+        background-color: #fafafb;
+    }
+
+    .totals-row * {
+        font-weight: 700;
+    }
+
+    .label-box {
+        text-align: left !important;
+        align-content: center;
+    }
+    .heading {
+        min-height: 32px;
+        padding-left: 8px;
+    }
+
+    .label-box.bold {
+        font-weight: 700;
+    }
+
+    th.content-box {
+        font-weight: 700;
+
+        width: 90px;
+    }
+
+    .content-box {
+        border-left: 1px solid #f5f6f7;
+    }
+
+    .content-table * {
+        text-align: left;
+    }
+
+    .content-table tr td {
+        width: 50%;
+        vertical-align: top;
+    }
+
+    .double-underline {
+        border-bottom: 3px double #000;
+    }
+
+    .content-table tr td:first-child {
+        font-weight: 700;
+    }
+
+    .content-table tr td:last-child {
+        border-left: 1px solid #f5f6f7;
+    }
+
+    .content-table p {
+        margin: 0;
+    }
+
+    .address-box span,
+    .officer-list span {
+        display: block;
+    }
+
+    .notes-wrap {
+        color: #000;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 18.005px */
+        letter-spacing: 0.12px;
+
+        min-height: 0;
+    }
+
+    .notes-title {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 22.5px */
+        letter-spacing: 0.15px;
+
+        margin-top: 50px;
+    }
+
+    .notes-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notes-block p {
+        margin: 0 0 10px 0;
+    }
+
+    .notes-subtitle {
+        display: block;
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+    .signature-company {
+        margin-top: 8px;
+    }
+
+    .disclaimer {
+        color: #3d4148;
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+        letter-spacing: 0.16px;
+
+        margin-top: 80px;
+    }
+
+    .draft-watermark {
+        position: absolute;
+        top: 400px;
+        left: -20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #99000033;
+        font-family: Arial;
+        font-size: 250px;
+        font-style: bold;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1px;
+        transform: rotate(45deg);
+    }
+
+    .wrapper {
+        position: absolute;
+        top: 80px;
+        bottom: 80px;
+        left: 70px;
+        right: 70px;
+    }
+    .indent {
+        padding-left: 40px;
+    }
+    .content-total {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        color: #000;
+        text-align: right;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 140%;
+        letter-spacing: 0.12px;
+        font-weight: 400;
+    }
+    .top-margin {
+        margin-top: 40px;
+    }
+
+    @media print {
+        html {
+            background-color: #fff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .full-page {
+            max-height: 11.692in;
+            max-width: 8.2in;
+            page-break-after: always;
+
+            padding: 0 70px;
+            padding-bottom: 0.5in;
+        }
+        .break {
+            display: none;
+        }
+    }
+
+            </style>
+        </head>
+
+        <body xml:lang="en">
+        
+            <div style="display: none">
+    <ix:header>
+        <ix:hidden>
+            <ix:nonNumeric contextRef="companyPeriodFullBusinessType" name="business:LegalFormEntity" />
+
+            <ix:nonNumeric contextRef="companyPeriodPrevEnd" format="ixt:datelonguk" name="business:StartDateForPeriodCoveredByReport">18 August 2024</ix:nonNumeric>
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:EntityTradingStatus" />
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:EntityDormantTruefalse">true</ix:nonNumeric>
+            <ix:nonNumeric contextRef="companyPeriodFullAudit" name="business:AccountsStatusAuditedOrUnaudited" />
+            <ix:nonNumeric contextRef="companyPeriodFullAccountsType" name="business:AccountsType" />
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:DescriptionPrincipalActivities">No description of principal activity</ix:nonNumeric>
+            <!-- Software references -->
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:NameProductionSoftware">@Taxd</ix:nonNumeric>
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:VersionProductionSoftware">2024.3</ix:nonNumeric>
+        </ix:hidden>
+        <ix:references>
+            <link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd" xlink:type="simple"/>
+        </ix:references>
+        <ix:resources>
+            <xbrli:context id="companyPeriodFull"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodStart"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2024-08-17</xbrli:instant></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodEnd"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2025-08-31</xbrli:instant></xbrli:period></xbrli:context>
+            
+            <xbrli:context id="companyPeriodPrevEnd"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2024-08-17</xbrli:instant></xbrli:period></xbrli:context>
+
+            <!-- Hidden tag contexts -->
+            <xbrli:context id="companyPeriodFullBusinessType"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="business:LegalFormEntityDimension">business:PrivateLimitedCompanyLtd</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodFullAudit"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment>
+                        <!-- Todo -->
+                        <xbrldi:explicitMember dimension="business:AccountsStatusDimension">business:AuditExempt-NoAccountantsReport</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodFullAccountsType"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment>
+                        <!-- Todo -->
+                        <xbrldi:explicitMember dimension="business:AccountsTypeDimension">business:FullAccounts</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+
+            <!-- Detailed Profit and Loss -->
+            
+            <!--  -->
+
+            <!-- Extra entities -->
+            <xbrli:context id="companyPeriodEndExpiresOneYear"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment>
+                        <!-- Todo -->
+                        <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-08-31</xbrli:instant></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodPrevEndExpiresOneYear"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-08-17</xbrli:instant></xbrli:period></xbrli:context>
+
+            <xbrli:context id="companyPeriodEndExpiresAfterOneYear"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment>
+                        <!-- Todo -->
+                        <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-08-31</xbrli:instant></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodPrevEndExpiresAfterOneYear"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-08-17</xbrli:instant></xbrli:period></xbrli:context>
+
+            <xbrli:context id="companyPeriodFullCountry"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment>
+                        <!-- Todo -->
+                        <xbrldi:explicitMember dimension="countries:CountriesRegionsDimension">countries:EnglandWales</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodFullOffice"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment>
+                        <!-- Todo -->
+                        <xbrldi:explicitMember dimension="business:EntityContactTypeDimension">business:RegisteredOffice</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodFullAccountingStandards"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="business:AccountingStandardsDimension">business:Micro-entities</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            <xbrli:context id="companyPeriodFullOfficer"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">15902919</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="business:EntityOfficersDimension">business:Director1</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-08-18</xbrli:startDate><xbrli:endDate>2025-08-31</xbrli:endDate></xbrli:period></xbrli:context>
+            
+
+
+            <xbrli:unit id="GBP"><xbrli:measure>iso4217:GBP</xbrli:measure></xbrli:unit>
+            <xbrli:unit id="Pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+        </ix:resources>
+    </ix:header>
+</div>
+
+            <!-- First page -->
+            <div class="full-page first-page">
+                <div class="header">
+                    <div class="header-line"></div>
+                    <div class="blue-square"></div>
+                    <div class="company-number">
+                        Company Registration No.
+                        <ix:nonNumeric contextRef="companyPeriodFull" name="business:UKCompaniesHouseRegisteredNumber">15902919</ix:nonNumeric>
+                        (England and Wales)
+                    </div>
+                </div>
+                <div class="title-section">
+                    <h1 class="title">
+                        <ix:nonNumeric contextRef="companyPeriodFull" name="business:EntityCurrentLegalOrRegisteredName">ASEEDA LIMITED</ix:nonNumeric>
+                    </h1>
+                    <div class="subtitle">
+                        <span style="display: block"><ix:nonNumeric contextRef="companyPeriodFull" name="business:ReportTitle">Unaudited Accounts</ix:nonNumeric></span>
+                        for the Period from
+                        <ix:nonNumeric contextRef="companyPeriodStart" format="ixt:datelonguk" name="business:StartDateForPeriodCoveredByReport">18 August 2024</ix:nonNumeric>
+                        to
+                        <ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="business:EndDateForPeriodCoveredByReport">31 August 2025</ix:nonNumeric>
+                    </div>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div class="full-page">
+                <div class="header">
+                    <div class="header-line"></div>
+                    <div class="blue-square"></div>
+                    <div class="header-title">
+                        <ix:nonNumeric contextRef="companyPeriodFull" name="business:EntityCurrentLegalOrRegisteredName">ASEEDA LIMITED</ix:nonNumeric>
+                        Annual Report and Unaudited Accounts for the Period from
+                        <ix:nonNumeric contextRef="companyPeriodStart" format="ixt:datelonguk" name="business:StartDateForPeriodCoveredByReport">18 August 2024</ix:nonNumeric>
+                        to
+                        <ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="business:EndDateForPeriodCoveredByReport">31 August 2025</ix:nonNumeric>
+                    </div>
+                </div>
+
+                <div class="contents-title"></div>
+                <div class="contents-list">
+    
+    <a class="contents-item" href="#CompanyInformation">
+        <span class="contents-text">Company Information</span>
+        <span class="contents-page">03</span>
+    </a>
+    
+    <a class="contents-item" href="#FinancialPosition">
+        <span class="contents-text">Statement of Financial Position</span>
+        <span class="contents-page">04</span>
+    </a>
+    
+</div>
+
+                <a class="taxd" href="https://www.taxd.co.uk">
+                    <span>Generated with </span>
+                    <span class="logo"></span>
+                </a>
+                <div class="footer">
+                    <div style="width: 150px; height: 1px"></div>
+                    <div class="footer-line"></div>
+                    <div class="page-number">02</div>
+                </div>
+            </div>
+            <div class="break"></div>
+            
+            <!--  -->
+            <div id="CompanyInformation" class="full-page">
+    <div class="header">
+        <div class="header-line"></div>
+        <div class="blue-square"></div>
+        <div class="header-title">
+            Company information for the period from
+            <ix:nonNumeric contextRef="companyPeriodStart" format="ixt:datelonguk" name="business:StartDateForPeriodCoveredByReport">18 August 2024</ix:nonNumeric>
+            to
+            <ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="business:EndDateForPeriodCoveredByReport">31 August 2025</ix:nonNumeric>
+        </div>
+    </div>
+
+    <div class="wrapper overflow-wrapper" style="top: 144px">
+        <table class="content-table">
+            <tbody>
+                <tr class="grey-row">
+                    <td>Director</td>
+                    <td class="officer-list">
+                        <span><ix:nonNumeric contextRef="companyPeriodFullOfficer" name="business:NameEntityOfficer">Adesida Adekemi Olubusola</ix:nonNumeric></span>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Company Number</td>
+                    <td>
+                        <ix:nonNumeric contextRef="companyPeriodFull" name="business:UKCompaniesHouseRegisteredNumber">15902919</ix:nonNumeric>
+                        <p>(England and Wales)</p>
+                    </td>
+                </tr>
+                <tr class="grey-row">
+                    <td>Registered Office</td>
+                    <td class="address-box"><span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:AddressLine1">18 Ford Road</ix:nonNumeric></span>
+
+<!-- If address line 2 -->
+
+<span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:AddressLine2">Shortstown</ix:nonNumeric></span> 
+
+<!-- If address line 3 -->
+
+
+<span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:PrincipalLocation-CityOrTown">Bedford</ix:nonNumeric></span>
+<span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:PostalCodeZip">MK42 0JE</ix:nonNumeric></span> United Kingdom
+</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <div class="footer-line"></div>
+        <div class="page-number">03</div>
+    </div>
+</div>
+<div class="break"></div>
+
+            <!--  -->
+            
+            <!--  -->
+            
+            <!--  -->
+            <!-- Three page -->
+<div id="FinancialPosition" class="full-page">
+    <div class="header">
+        <div class="header-line"></div>
+        <div class="blue-square"></div>
+        <div class="header-title">
+            Statement of financial position as at
+            <ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="business:EndDateForPeriodCoveredByReport"><ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="business:BalanceSheetDate">31 August 2025</ix:nonNumeric></ix:nonNumeric>
+        </div>
+    </div>
+
+    <div class="wrapper" style="top: 112px; display: flex; flex-direction: column">
+         
+
+<table class="figures-table">
+    <thead>
+        <tr>
+            <th class="label-box"></th>
+            <th class="content-box">2025 £</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Fixed Asset -->
+        
+        <!-- Current Asset -->
+        
+<tr class="grey-row false">
+    
+    <td class="label-box">Current Assets</td>
+    <td class="content-box">
+        
+
+
+    <ix:nonFraction contextRef="companyPeriodEnd" decimals="0" format="ixt:numcommadot" name="core:CurrentAssets" unitRef="GBP">
+        1
+    </ix:nonFraction>
+
+
+    </td>
+    
+</tr>
+
+        <!-- Creditors: amounts falling due within one year -->
+        
+
+        <!-- Net Current Assets/Liabilities -->
+        
+<tr class="standard-row totals-row">
+    
+    <td class="label-box">Net Current Assets</td>
+    <td class="content-box">
+        
+
+
+    <ix:nonFraction contextRef="companyPeriodEnd" decimals="0" format="ixt:numcommadot" name="core:NetCurrentAssetsLiabilities" unitRef="GBP">
+        1
+    </ix:nonFraction>
+
+
+    </td>
+    
+</tr>
+
+
+        <!-- Total assets less current liabilities -->
+        
+<tr class="grey-row totals-row">
+    
+    <td class="label-box">Total assets less current liabilities</td>
+    <td class="content-box">
+        
+
+
+    <ix:nonFraction contextRef="companyPeriodEnd" decimals="0" format="ixt:numcommadot" name="core:TotalAssetsLessCurrentLiabilities" unitRef="GBP">
+        1
+    </ix:nonFraction>
+
+
+    </td>
+    
+</tr>
+
+
+        <!-- Creditors: amounts falling due after more than one year -->
+        
+
+        <!-- Net Assets/Liabilities -->
+        
+<tr class="standard-row totals-row">
+    
+    <td class="label-box">Net Assets</td>
+    <td class="content-box">
+        
+
+
+    <ix:nonFraction contextRef="companyPeriodEnd" decimals="0" format="ixt:numcommadot" name="core:NetAssetsLiabilities" unitRef="GBP">
+        1
+    </ix:nonFraction>
+
+
+    </td>
+    
+</tr>
+
+
+        <!-- Capital and Reserves -->
+        
+<tr class="grey-row totals-row">
+    
+    <td class="label-box">Capital and reserves</td>
+    <td class="content-box">
+        
+
+
+    <ix:nonFraction contextRef="companyPeriodEnd" decimals="0" format="ixt:numcommadot" name="core:Equity" unitRef="GBP">
+        1
+    </ix:nonFraction>
+
+
+    </td>
+    
+</tr>
+
+    </tbody>
+</table>
+ <div class="notes-wrap overflow-wrapper" style="min-height: 0">
+    <div class="notes-title">NOTES TO THE ACCOUNTS</div>
+    <div class="notes-block">
+        <span class="notes-subtitle">1. Statutory information</span>
+        <p>
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:EntityCurrentLegalOrRegisteredName">ASEEDA LIMITED</ix:nonNumeric>
+            is a private company, limited by shares, registered in England and Wales
+            <ix:nonNumeric contextRef="companyPeriodFullCountry" name="business:CountryFormationOrIncorporation" />, registration number
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:UKCompaniesHouseRegisteredNumber">15902919</ix:nonNumeric>. The registered office is <span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:AddressLine1">18 Ford Road</ix:nonNumeric></span>
+
+<!-- If address line 2 -->
+
+<span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:AddressLine2">Shortstown</ix:nonNumeric></span> 
+
+<!-- If address line 3 -->
+
+
+<span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:PrincipalLocation-CityOrTown">Bedford</ix:nonNumeric></span>
+<span><ix:nonNumeric contextRef="companyPeriodFullOffice" name="business:PostalCodeZip">MK42 0JE</ix:nonNumeric></span> United Kingdom
+
+        </p>
+    </div>
+    <div class="notes-block">
+        <span class="notes-subtitle">2. Average number of employees</span>
+        <p>
+            During the period the average number of employees was
+            <ix:nonFraction contextRef="companyPeriodFull" decimals="0" name="core:AverageNumberEmployeesDuringPeriod" unitRef="Pure">
+                0</ix:nonFraction>
+            .
+        </p>
+        <p>
+            
+            <ix:nonNumeric contextRef="companyPeriodFull" name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection480CompaniesAct2006RelatingToDormantCompanies">For the period ending
+                <ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="business:EndDateForPeriodCoveredByReport">31 August 2025</ix:nonNumeric>
+                the company was entitled to exemption from audit under section 480 of the Companies Act 2006 relating to
+                dormant companies.</ix:nonNumeric>
+
+            
+            <ix:nonNumeric contextRef="companyPeriodFull" name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">
+                The members have not required the company to obtain an audit in accordance with section 476 of the
+                Companies Act 2006.
+            </ix:nonNumeric>
+        </p>
+        <p>
+            <ix:nonNumeric contextRef="companyPeriodFull" name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">The directors acknowledge their responsibilities for complying with the requirements of the Act with
+                respect to accounting records and the preparation of accounts.</ix:nonNumeric>
+        </p>
+        <p>
+            <ix:nonNumeric contextRef="companyPeriodFullAccountingStandards" name="business:AccountingStandardsApplied"></ix:nonNumeric>
+            <ix:nonNumeric contextRef="companyPeriodFull" name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">
+                These accounts have been prepared in accordance with the micro-entity provisions of the Companies Act
+                2006 and FRS 105, The Financial Reporting Standard applicable to the Micro-entities Regime.
+            </ix:nonNumeric>
+        </p>
+    </div>
+    <p>
+        Approved by the board on
+        <ix:nonNumeric contextRef="companyPeriodEnd" format="ixt:datelonguk" name="core:DateAuthorisationFinancialStatementsForIssue">06 August 2026</ix:nonNumeric>
+    </p>
+    <div>
+        <div>
+            <ix:nonNumeric contextRef="companyPeriodFullOfficer" name="business:NameEntityOfficer">Adesida Adekemi Olubusola</ix:nonNumeric>
+            <ix:nonNumeric contextRef="companyPeriodFullOfficer" name="core:DirectorSigningFinancialStatements" />
+        </div>
+        <div>Director</div>
+        <div class="signature-company">
+            Company Registration No.
+            <ix:nonNumeric contextRef="companyPeriodFull" name="business:UKCompaniesHouseRegisteredNumber">15902919</ix:nonNumeric>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-line"></div>
+        <div class="page-number">04</div>
+    </div>
+</div>
+<div class="break"></div>
+
+            <!--  -->
+            
+        
+        </body>
+    </html>

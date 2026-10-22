@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:aurep="http://xbrl.frc.org.uk/reports/2025-01-01/aurep" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:direp="http://xbrl.frc.org.uk/reports/2025-01-01/direp" xmlns:accrep="http://xbrl.frc.org.uk/reports/2025-01-01/accrep" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://xbrl.frc.org.uk/general/2025-01-01/common" xmlns:core="http://xbrl.frc.org.uk/fr/2025-01-01/core" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:curr="http://xbrl.frc.org.uk/cd/2025-01-01/currencies" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:lang="http://xbrl.frc.org.uk/cd/2025-01-01/languages" xmlns:bus="http://xbrl.frc.org.uk/cd/2025-01-01/business" xmlns:types="http://xbrl.frc.org.uk/general/2025-01-01/types" xmlns:countries="http://xbrl.frc.org.uk/cd/2025-01-01/countries" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:uk-ref="http://xbrl.frc.org.uk/general/2025-01-01/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldte="http://xbrl.org/2005/xbrldt/errors" xmlns:xbrldie="http://xbrl.org/2006/xbrldi/errors" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:frs-102="http://xbrl.frc.org.uk/FRS-102/2025-01-01" xmlns:dpl="http://xbrl.frc.org.uk/dpl/2025-01-01" xmlns:dpl-frc="http://xbrl.frc.org.uk/dpl/2025-01-01" xmlns:uk-countries="http://xbrl.frc.org.uk/cd/2025-01-01/countries">
+  <head>
+    <title>RUTA CAFE LTD - Accounts</title>
+    <meta content="application/xhtml+xml; charset=UTF-8" http-equiv="Content-Type" />
+    <style type="text/css">
+		body.report-body { margin: 0 8px; }
+		.page700 { min-height: 750px; background-color:transparent; }
+		.pagebreak { page-break-before:always }
+		.pageno { display: none!important }
+		.page-body { padding: 0; vertical-align: top }
+
+		.page700 a { color:#000000; text-decoration:none; font-size: 13px; }
+		.page700 a img { border-style: none; border-width: 0 }
+		.page700 hr { margin: 0; border: none; border-bottom:1px solid #202020 }
+		.page700 p { text-align:justify; margin-top:15px; margin-bottom:15px }
+		.page700 p strong { text-align:left }
+		.page700 p.subhead { font-weight:bold; margin-top:5px; margin-bottom:5px; text-align:left }
+		.page700 table.page { width: 100%; border-spacing: 0; font-family:'Times New Roman', Times, serif !important; font-size:13px }
+		.page700 table.tfont { font-size:13px }
+		.page700 table.page thead { display: table-header-group }
+		.page700 table tbody { vertical-align: top }
+		.page700 table.page700 thead th { height: 90px }
+		.page700 thead th { font-weight:normal; font-size:17px }
+		.page700 table.w100p, .page700 table.w550px { font-size:13px;margin-bottom:12px;  }
+		.page700 tr.spacer { height:10px }
+
+		.page700 .w95px { width: 85px; vertical-align:middle }        
+		.page700 .w25px { width: 10px }
+		.page700 .w10px { width: 5px }
+		.page700 .w100p { width: 100% }
+		.page700 .w550px { width: 550px; }
+		.page700 .w200px { width: 200px }
+		.page700 .w98p{ width: 94%; }
+
+		.page700 .cover-company { text-align: center; font-size:17px; text-transform:uppercase;  }
+		.page700 .center { margin: auto }
+		.page700 .tcenter { text-align:center }
+		.page700 .left, .cmp-val { text-align: left }
+		.page700 .page-body .right { text-align: right; vertical-align:middle; float:none;}
+		.page700 .report .right{ float:none; }
+		.page700 .report .left{ float:none; }
+		.page700 .bold { font-weight: bold }
+		.page700 .mb0 { margin-bottom:0 }
+		.page700 .mt0 { margin-top:0 }
+		.page700 .bbottom { border-bottom:1px solid #202020 }
+        .borderbottom { border-bottom:1px solid #202020 }
+		.page700 .pageheader { font-size:17px; text-align:center; margin-top:5px; margin-bottom:20px }
+		.page700 .pageheader a { font-size:17px; }
+		.page700 .avoid_pagebreak { page-break-inside : avoid }
+		.page700 .cmp-val{ padding-bottom: 20px }
+		.page700 .leftHead { width: 230px; display: inline-block; font-weight:bold; vertical-align:top }
+		.page700 .contentHead { width: 270px; display: inline-block; vertical-align:top }
+		.page700 .page-number { width: 100px; display: inline-block; vertical-align:top; text-align:center;font-family:'Times New Roman', Times, serif !important }
+		.page700 .totalRow td { border-top:1px solid #202020; font-weight:bold; padding-top:3px; padding-bottom:3px; text-align:right; vertical-align:middle }
+		.page700 .totalCol { border-top:1px solid #202020; font-weight:bold; padding-bottom:5px; text-align:right; vertical-align:middle }
+		.page700 .gTotalCol { border-top:1px solid #202020; border-bottom:double #202020; font-weight:bold; padding-bottom:1px; padding-top: 2px; text-align:right; vertical-align:middle }
+        .page700 .gdoubleTotalCol { border-top:1px solid #202020; border-bottom: 3px double #202020; font-weight:bold; padding-bottom:1px; padding-top: 2px; text-align:right; vertical-align:middle }
+		.page700 .note-no { padding-top:16px; width: 20px; font-weight:bold; vertical-align:top }
+		.page700 .note-body { padding-top: 12px; }
+		.page700 .note-body-bottom { padding-bottom: 12px; }
+         .page700 .note-body .tag { padding-top: 12px;}
+        .page700 .note-body .tagged { margin-top: 12px !important;display:inline-block;}
+        .page700 .note-body .tag .tagged { margin-top:0px !important;display:inline-block;}
+         #note-Goodwill strong { margin-bottom: 12px !important;display:inline-block;position:relative;}
+         #note-LicencesAndPatents strong { margin-bottom: 12px !important;display:inline-block;position:relative;}
+         #note-DevelopmentExpenditures strong { margin-bottom: 12px !important;display:inline-block;position:relative;}
+         #note-ComputerSoftwareDevelopmentCosts strong { margin-bottom: 12px !important;display:inline-block;position:relative;}
+	</style>
+    <style media="print" type="text/css">
+		.page700 table.page, .page700 table.w100p, .page700 table.tfont, .page700 table.w550px { font-size:15px; }
+		.page700 a { font-size:15px; }
+		.page700 .cover-company { font-size: 21px; }
+		.page700 table th.w95px { font-size:17px; }
+		.page700 thead th { font-weight:normal; font-size: 17px; }
+		.page700 .pageheader { font-size:21px; text-align:center; margin-top:5px; margin-bottom:25px; }
+		.page700 .pageheader a { font-size:21px; }
+	</style>
+  </head>
+  <body class="report-body">
+    <div style="display:none">
+      <ix:header>
+        <ix:hidden>
+          <ix:nonNumeric name="bus:StartDateForPeriodCoveredByReport" contextRef="companyA">2024-11-13</ix:nonNumeric>
+          <ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="companyA">2025-11-30</ix:nonNumeric>
+          <ix:nonNumeric name="bus:EntityTradingStatus" contextRef="company" />
+          <ix:nonNumeric name="bus:EntityDormantTruefalse" contextRef="company">false</ix:nonNumeric>
+          <ix:nonNumeric name="bus:LegalFormEntity" contextRef="business_type" />
+          <ix:nonNumeric name="bus:ApplicableLegislation" contextRef="acc_legislation" />
+          <ix:nonNumeric name="bus:AccountsType" contextRef="acc_type" />
+          <ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="acc_audit_status" />
+          <ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="acc_standard" />
+          <ix:nonNumeric contextRef="director1" name="core:DirectorSigningFinancialStatements"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="company" name="bus:DescriptionPrincipalActivities">No description of principal activity</ix:nonNumeric>
+          <ix:nonNumeric name="bus:NameProductionSoftware" contextRef="company">Capium Accounts Production</ix:nonNumeric>
+          <ix:nonNumeric name="bus:VersionProductionSoftware" contextRef="company">1.1</ix:nonNumeric>
+        </ix:hidden>
+        <ix:references>
+          <link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd" xlink:type="simple" />
+        </ix:references>
+        <ix:resources>
+          <xbrli:context id="current_Period">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_type">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:AbridgedAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_standard">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:Micro-entities</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_audit_status">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExemptWithAccountantsReport</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_legislation">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:ApplicableLegislationDimension">bus:SmallCompaniesRegimeForAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="business_type">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="company">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="companyA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="office">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityContactTypeDimension">bus:RegisteredOffice</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="withinoneyear">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="afteroneyear">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="company_ControllingPartyUltimateControllingPartyTruefalse">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:typedMember dimension="core:X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension">
+                  <core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>1</core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>
+                </xbrldi:typedMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director1B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director2B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director3">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director3B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="StartPrevious">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-11-13</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="solicitor">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:ThirdPartyAgentStatusDimension">bus:LeadAgentIfApplicable</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="companyA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-12</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="OrdinaryShareClass1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="OrdinaryShareClass1A">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityShareClassesDimension">bus:OrdinaryShareClass1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FixturesFittings">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-11-13</xbrli:startDate>
+              <xbrli:endDate>2025-11-30</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FixturesFittingsA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FixturesFittingsA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-12</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="LeasedAssetsA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:LeasedAssetsHeldAsLessee</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="LeasedAssetsA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:LeasedAssetsHeldAsLessee</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-12</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="cost_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="cost_investmentA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-12</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="addition_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:AdditionsToInvestments</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="disposal_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:DisposalsDecreaseInInvestments</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="reval_investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:RevaluationsIncreaseDecreaseInInvestments</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="investmentA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-11-30</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="investmentA_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">16077190</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-11-12</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:unit id="GBP">
+            <xbrli:measure>iso4217:GBP</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Shares">
+            <xbrli:measure>xbrli:shares</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Pure">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+        </ix:resources>
+      </ix:header>
+    </div>
+    <div class="page700">
+      <table class="page">
+        <tbody>
+          <tr>
+            <td style="text-align: center">
+              <img src="data:image/png;base64,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" alt="Logo On Report" style="width: 200px; height: auto;" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right">Registered Number: <ix:nonNumeric contextRef="company" name="bus:UKCompaniesHouseRegisteredNumber">16077190</ix:nonNumeric></td>
+          </tr>
+          <tr>
+            <td style="text-align: right">England and Wales</td>
+          </tr>
+          <tr>
+            <td>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p class="cover-company">
+                <ix:nonNumeric contextRef="company" name="bus:EntityCurrentLegalOrRegisteredName">RUTA CAFE LTD</ix:nonNumeric>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <br />
+              <ix:nonNumeric contextRef="company" name="bus:ReportTitle">Abridged Accounts</ix:nonNumeric>
+            </td>
+          </tr>
+          <tr>
+            <td> </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <br />
+              <br />
+              <strong>Period of accounts</strong>
+              <br />
+              <br />
+              <strong>Start date:</strong>
+              <ix:nonNumeric contextRef="companyA" name="bus:StartDateForPeriodCoveredByReport" format="ixt:datedaymonthyearen">13 November 2024</ix:nonNumeric>
+              <br />
+              <br />
+              <strong>End date:</strong>
+              <ix:nonNumeric contextRef="companyA" name="bus:EndDateForPeriodCoveredByReport" format="ixt:datedaymonthyearen">30 November 2025</ix:nonNumeric>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagebreak page700">
+      <table class="page">
+        <thead>
+          <tr>
+            <th>
+              <p class="pageheader" id="p_1">
+                <strong style="text-transform:uppercase;font-weight:100">RUTA CAFE LTD</strong>
+                <br />
+                <a id="balance_sheet" class="bookmark">Statement of Financial Position</a>
+                <br />As at <ix:nonNumeric contextRef="companyA" name="bus:BalanceSheetDate" format="ixt:datedaymonthyearen">30 November 2025</ix:nonNumeric></p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="page-body">
+              <div id="div_1">
+                <table class="w100p center" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <th> </th>
+                    <th class="tcenter w95px"></th>
+                    <th class="right" colspan="2">2025</th>
+                  </tr>
+                  <tr>
+                    <th> </th>
+                    <th class="tcenter w95px"> </th>
+                    <th class="right w95px">£</th>
+                    <th class="right w95px">£</th>
+                  </tr>
+                  <tr>
+                    <td>Fixed assets</td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="right">
+                      <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:FixedAssets" unitRef="GBP" format="ixt:numdotdecimal">16,115</ix:nonFraction> </td>
+                  </tr>
+                  <tr>
+                    <td>Current assets</td>
+                    <td class="tcenter"></td>
+                    <td class="right">
+                      <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:CurrentAssets" unitRef="GBP" format="ixt:numdotdecimal">1,211</ix:nonFraction> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Creditors: amount falling due within one year</td>
+                    <td class="tcenter"></td>
+                    <td class="borderbottom right">(<ix:nonFraction contextRef="withinoneyear" decimals="0" scale="0" name="core:Creditors" unitRef="GBP" format="ixt:numdotdecimal">9,271</ix:nonFraction>)</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Net current assets</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="right">
+                      <strong>(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:NetCurrentAssetsLiabilities" unitRef="GBP" format="ixt:numdotdecimal">8,060</ix:nonFraction>)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Total assets less current liabilities</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="totalCol">
+                      <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" format="ixt:numdotdecimal">8,055</ix:nonFraction> </td>
+                  </tr>
+                  <tr>
+                    <td>Creditors: amount falling due after more than one year</td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="right">(<ix:nonFraction contextRef="afteroneyear" decimals="0" scale="0" name="core:Creditors" unitRef="GBP" format="ixt:numdotdecimal">17,351</ix:nonFraction>)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Net assets</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="gdoubleTotalCol">(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:NetAssetsLiabilities" unitRef="GBP" format="ixt:numdotdecimal">9,296</ix:nonFraction>)</td>
+                  </tr>
+                  <tr class="spacer">
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <br />
+                    </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Capital and reserves</strong>
+                    </td>
+                    <td class="tcenter"></td>
+                    <td> </td>
+                    <td class="gdoubleTotalCol">(<ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:Equity" unitRef="GBP" format="ixt:numdotdecimal">9,296</ix:nonFraction>)</td>
+                  </tr>
+                  <tr class="spacer">
+                    <td> </td>
+                  </tr>
+                </table>
+                <div>
+                  <strong>NOTES TO THE ACCOUNTS</strong>
+                </div>
+                <br />
+                <div class="note-body-bottom avoid_pagebreak" id="note-StatutoryInformation">
+                  <strong>General Information</strong>
+                  <br />
+                </div>
+                <div class="tag tag-152">RUTA CAFE LTD is a private company, limited by shares, registered in England and Wales, registration number 16077190, registration address 66 BRYN STREET, BRYNHYFRYD , SWANSEA, SA5 9HR.  <br /><br />The presentation currency is £ sterling.</div>
+                <table class="w100p">
+                  <tr>
+                    <td class="note-no" style="padding-top:6px">1.</td>
+                    <td>
+                      <p class="subhead">
+                        <strong>Accounting policies</strong>
+                      </p>
+                      <div class="note-body avoid_pagebreak" id="note-BasisOfAccounting">
+                        <strong>Significant accounting policies</strong>
+                        <br />
+                        <div class="tag tag-1">
+                          <ix:nonNumeric contextRef="company" name="core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements">
+                            <b>Statement of compliance</b>
+                            <div class="tag">These financial statements have been prepared in compliance with FRS 105 – The Financial Reporting Standard applicable in the UK and Republic of Ireland and the Companies Act 2006.</div>
+                            <div class="tag">
+                              <b>Basis of preparation</b>
+                            </div>
+                            <div class="tag">The financial statements have been prepared  under the historical cost convention.</div>
+                            <div class="tag">The financial statements are prepared in sterling which is the functional currency of the company.</div>
+                          </ix:nonNumeric>
+                        </div>
+                      </div>
+                      <div class="note-body avoid_pagebreak" id="note-Turnover">
+                        <strong>Turnover</strong>
+                        <br />
+                        <div class="tag tag-5">
+                          <ix:nonNumeric contextRef="company" name="core:RevenueRecognitionPolicy">Turnover comprises the invoiced value of goods and services supplied by the company, net of Value Added Tax and trade discounts.</ix:nonNumeric>
+                        </div>
+                      </div>
+                      <div class="note-body avoid_pagebreak" id="note-TangibleFixedAssets">
+                        <strong>Tangible fixed assets</strong>
+                        <br />
+                        <div class="tag tag-20">
+                          <ix:nonNumeric contextRef="company" name="core:PropertyPlantEquipmentPolicy">Tangible fixed assets, other than freehold land, are stated at cost or valuation less depreciation and any provision for impairment. Depreciation is provided at rates calculated to write off the cost or valuation of fixed assets, less their estimated residual value, over their expected useful lives on the following basis:</ix:nonNumeric>
+                        </div>
+                      </div>
+                      <table class="center w550px" cellpadding="5">
+                        <tr>
+                          <td>Fixtures and Fittings</td>
+                          <td class="w200px">
+                            <ix:nonNumeric contextRef="FixturesFittings" name="core:DescriptionDepreciationMethodForPropertyPlantEquipment">20% Reducing Balance</ix:nonNumeric>
+                          </td>
+                        </tr>
+                      </table>
+                      <div class="note-body avoid_pagebreak" id="note-Stocks">
+                        <strong>Stocks</strong>
+                        <br />
+                        <div class="tag tag-24">
+                          <ix:nonNumeric contextRef="company" name="core:InventoriesPolicy">Stocks are valued at the lower of cost and net realisable value after making due allowance for obsolete and slow moving items. Cost includes all direct costs and an appropriate proportion of fixed and variable overheads.</ix:nonNumeric>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="avoid_pagebreak">
+                  <table class="w100p">
+                    <tr>
+                      <td class="note-no" style="padding-top:6px">2.</td>
+                      <td>
+                        <p class="subhead">Tangible fixed assets</p>
+                        <table class="w100p" cellpadding="3" cellspacing="0" border="0">
+                          <tr>
+                            <td class="left bold">Cost or valuation</td>
+                            <td class="right w95px">Fixtures and Fittings</td>
+                            <td class="w10px"> </td>
+                            <td class="right w95px" style="font-weight:bold;">Total</td>
+                          </tr>
+                          <tr>
+                            <td class="left"> </td>
+                            <td class="right bold">£</td>
+                            <td> </td>
+                            <td class="right bold">£</td>
+                          </tr>
+                          <tr>
+                            <td class="left">At 13 November 2024</td>
+                            <td class="right">- </td>
+                            <td> </td>
+                            <td class="right">- </td>
+                          </tr>
+                          <tr>
+                            <td class="left">Additions</td>
+                            <td class="right">
+                              <ix:nonFraction contextRef="FixturesFittings" decimals="0" scale="0" name="core:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">16,968</ix:nonFraction> </td>
+                            <td> </td>
+                            <td class="right">
+                              <ix:nonFraction contextRef="company" decimals="0" scale="0" name="core:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">16,968</ix:nonFraction> </td>
+                          </tr>
+                          <tr>
+                            <td class="left">Disposals</td>
+                            <td class="right">- </td>
+                            <td> </td>
+                            <td class="right">- </td>
+                          </tr>
+                          <tr>
+                            <td class="left">At 30 November 2025</td>
+                            <td class="gTotalCol">
+                              <ix:nonFraction contextRef="FixturesFittingsA" decimals="0" scale="0" name="core:PropertyPlantEquipmentGrossCost" unitRef="GBP" format="ixt:numdotdecimal">16,968</ix:nonFraction> </td>
+                            <td> </td>
+                            <td class="gTotalCol">
+                              <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:PropertyPlantEquipmentGrossCost" unitRef="GBP" format="ixt:numdotdecimal">16,968</ix:nonFraction> </td>
+                          </tr>
+                          <tr>
+                            <td class="left bold" colspan="4">Depreciation</td>
+                          </tr>
+                          <tr>
+                            <td class="left">At 13 November 2024</td>
+                            <td class="right">- </td>
+                            <td> </td>
+                            <td class="right">- </td>
+                          </tr>
+                          <tr>
+                            <td class="left">Charge for period</td>
+                            <td class="right">
+                              <ix:nonFraction contextRef="FixturesFittings" decimals="0" scale="0" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">853</ix:nonFraction> </td>
+                            <td> </td>
+                            <td class="right">
+                              <ix:nonFraction contextRef="company" decimals="0" scale="0" name="core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">853</ix:nonFraction> </td>
+                          </tr>
+                          <tr>
+                            <td class="left">On disposals</td>
+                            <td class="right">- </td>
+                            <td> </td>
+                            <td class="right">- </td>
+                          </tr>
+                          <tr>
+                            <td class="left">At 30 November 2025</td>
+                            <td class="gTotalCol">
+                              <ix:nonFraction contextRef="FixturesFittingsA" decimals="0" scale="0" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">853</ix:nonFraction> </td>
+                            <td> </td>
+                            <td class="gTotalCol">
+                              <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">853</ix:nonFraction> </td>
+                          </tr>
+                          <tr>
+                            <td class="left bold" colspan="4">Net book values</td>
+                          </tr>
+                          <tr>
+                            <td class="left">Closing balance as at 30 November 2025</td>
+                            <td class="right bold">
+                              <ix:nonFraction contextRef="FixturesFittingsA" decimals="0" scale="0" name="core:PropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">16,115</ix:nonFraction> </td>
+                            <td> </td>
+                            <td class="right bold">
+                              <ix:nonFraction contextRef="companyA" decimals="0" scale="0" name="core:PropertyPlantEquipment" unitRef="GBP" format="ixt:numdotdecimal">16,115</ix:nonFraction> </td>
+                          </tr>
+                          <tr>
+                            <td class="left">Opening balance as at 13 November 2024</td>
+                            <td class="gTotalCol">- </td>
+                            <td> </td>
+                            <td class="gTotalCol">- </td>
+                          </tr>
+                        </table>
+                        <br />
+                      </td>
+                    </tr>
+                  </table>
+                  <br />
+                </div>
+                <div class="avoid_pagebreak">
+                  <table class="w100p">
+                    <tr>
+                      <td class="note-no" style="padding-top:6px;">3.</td>
+                      <td>
+                        <p class="subhead">Average number of employees</p>
+                        <div class="note-body"></div>
+                        <div>Average number of employees during the period was <ix:nonFraction contextRef="company" decimals="0" scale="0" name="core:AverageNumberEmployeesDuringPeriod" unitRef="Pure" format="ixt:numdotdecimal">7</ix:nonFraction>.</div>
+                      </td>
+                    </tr>
+                  </table>
+                  <br />
+                </div>
+                <div class="avoid_pagebreak">
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">For the period ended 30 November 2025 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <b>Directors' responsibilities:</b>
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">The members have not required the company to obtain an audit of its accounts for the period in question in accordance with section 476.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">These accounts have been prepared in accordance with the micro-entity provisions and FRS 105, the Financial Reporting Standard applicable to the micro-entities regime. The accounts have been delivered in accordance with the provisions applicable to companies subject to the small companies regime. The income statement has not been delivered to the Registrar of Companies.</ix:nonNumeric>
+                  <br />
+                  <br />
+                  <ix:nonNumeric contextRef="company" name="direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006">The members have agreed to the preparation of abridged accounts.</ix:nonNumeric>
+                </div>
+                <div class="avoid_pagebreak" style="margin-bottom:0px; margin-top:15px;text-align:left;">The financial statements were approved by the board of directors on <ix:nonNumeric contextRef="companyA" name="core:DateAuthorisationFinancialStatementsForIssue" format="ixt:datedaymonthyearen">06 August 2026</ix:nonNumeric> and were signed on its behalf by:<br /><br /><br /><table class="w100p"><tr><td style="width:100%">--------------------------------<br />Volodymyr IVLIEV<br />Director</td></tr></table></div>
+                <div class="pageno">1</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
